@@ -206,6 +206,43 @@ body {
   padding-left: 20px;
   cursor: pointer;
 }
+/* ########## FOOTER STYLE ########## */
+.footer-section {
+width: 100%;
+display: flex;
+flex-direction: row;
+gap: 250px;
+justify-content: flex-start;
+padding: 0 0 50px 180px;
+}
+.sub-footer {
+  display: flex;
+  flex-direction: column;
+  }
+  .sub-footer h1 {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .sub-footer a {
+    text-decoration: none;
+    font-size: .8em;
+    padding-bottom: 10px;
+    text-align: left;
+    color: var(--black);
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .social a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--grey);
+  }
+
 /* ########## MEDIA QUERIES ########## */
 @media screen and (max-width: 1153px) {
   /* ########## MEDIA QUERY FOR NAV BAR ########## */
