@@ -22,8 +22,7 @@ body {
   border: none;
   font-family: "Poppins", sans-serif;
 }
-
-/* TOP HERO SECTION BACKGROUND IMAGE */
+/* ########## TOP HERO SECTION BACKGROUND IMAGE ########## */
 .top_dashboard {
   position: relative;
   width: 100%;
@@ -40,9 +39,8 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
 }
-
-/* NAV BAR STYLING */
- .navbar {
+/* ########## NAV BAR STYLING ########## */
+.navbar {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -73,7 +71,6 @@ body {
 .navbar_ul li,
 .navbar_btn li {
   list-style: none;
-  /* padding-left: 50px ; */
 }
 
 .navbar_ul li a,
@@ -119,13 +116,27 @@ body {
   display: none;
   color: var(--white);
 }
+/* ########## ACTIVATING HAMBURGER MENU ########## */
+.link_container.active {
+  display: flex;
+  background-color: var(--almostBlack);
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  padding: 0 0 40px 40px;
+  top: 106px;
+  right: 0;
+  gap: 40px;
+  z-index: -99;
+}
 
-/* .active {
-  
-} */
-
-/* MEDIA QUERIES */
+.navbar.display {
+  background-color: var(--almostBlack);
+  border-bottom: 1px solid var(--almostWhite);
+}
+/* ########## MEDIA QUERIES ########## */
 @media screen and (max-width: 1153px) {
+    /* ########## MEDIA QUERY FOR NAV BAR ########## */
   .logo {
     width: 100%;
     display: flex;
@@ -144,14 +155,27 @@ body {
   }
 }
 @media screen and (max-width: 961px) {
+    /* ########## MOBILE VIEW NAVBAR STYLING ########## */
   .link_container {
     display: none;
   }
+  .link_container .navbar_ul {
+    flex-direction: column;
+    margin: 0;
+    gap: 40px;
+  }
+  .navbar .link_container .navbar_btn {
+    flex-direction: column;
+  }
+  /* ########## END OF MOBILE VIEW NAVBAR ########## */
   .navbar .hamburger {
     display: block;
     color: var(--white);
     padding-right: 30px;
-    font-size: 20px;
+    font-size: 30px;
+  }
+  .hamburger .xmark {
+    display: none;
   }
   .navbar {
     padding: 20px 0;
@@ -167,6 +191,9 @@ body {
   .navbar .hamburger {
     padding-right: 20px;
   }
+  .link_container.active {
+    top: 88px;
+  }
   .navbar .logo {
     padding-left: 20px;
     padding-right: 0;
@@ -175,4 +202,5 @@ body {
   .navbar .logo img {
     width: 50px;
   }
+  /* ########## END OF MEDIA QUERY FOR NAVBAR STYLING ########## */
 }
