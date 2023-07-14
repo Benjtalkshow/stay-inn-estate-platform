@@ -127,16 +127,88 @@ body {
   top: 106px;
   right: 0;
   gap: 40px;
-  z-index: -99;
+  z-index: 99;
 }
 
 .navbar.display {
   background-color: var(--almostBlack);
   border-bottom: 1px solid var(--almostWhite);
 }
+
+/* ########## HERO WRITEUP CONTAINER STYLE SECTION ########## */
+.hero-writeup-container {
+  width: 100%;
+  position: relative;
+  padding-left: 100px;
+  padding-top: 150px;
+  background-color: #d1ac00;
+  /* margin-top: 200px; */
+  z-index: 100;
+}
+.hero-writeup-container .hero-writeup h1 {
+  font-size: 3.5em;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--almostWhite);
+}
+.hero-writeup-container .hero-writeup article {
+  font-size: 1.2em;
+  font-weight: 400;
+  padding: 10px 0;
+  color: var(--white);
+}
+.hero-sub-section {
+  width: calc(100% - 100px);
+  background-color: var(--almostDarkBlue);
+  display: grid;
+  /* position: inherit; */
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px 150px;
+  opacity: 0.7;
+  margin-top: 50px;
+}
+.hero-sub-section .hero-sub-section-btn {
+  width: 150px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.8em;
+  color: var(--white);
+}
+.hero-sub-section-btn .fa-regular {
+  font-size: 1em;
+}
+.hero-sub-section input {
+  padding: 10px;
+  width: 146px;
+  outline-width: 0;
+  border-radius: 8px;
+  border-width: 0;
+}
+.hero-sub-section .top {
+  padding-bottom: 8px;
+}
+.hero-sub-section .down button {
+  padding: 10px;
+  width: 250px;
+  outline-width: 0;
+  border-radius: 8px;
+  border-width: 0;
+  cursor: pointer;
+}
+.hero-sub-section .down .searchbar {
+  background-color: var(--almostYellow);
+  color: var(--white);
+}
+.hero-sub-section .down button .fa-solid,
+.hero-sub-section .down button .fa-regular {
+  padding-left: 20px;
+  cursor: pointer;
+}
 /* ########## MEDIA QUERIES ########## */
 @media screen and (max-width: 1153px) {
-    /* ########## MEDIA QUERY FOR NAV BAR ########## */
+  /* ########## MEDIA QUERY FOR NAV BAR ########## */
   .logo {
     width: 100%;
     display: flex;
@@ -153,9 +225,14 @@ body {
   .navbar_btn {
     padding: 0;
   }
+  /* ########## HERO-WRITEUP CONTAINER STYLING  ########## */
+  .hero-sub-section {
+    padding: 20px 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (max-width: 961px) {
-    /* ########## MOBILE VIEW NAVBAR STYLING ########## */
+  /* ########## MOBILE VIEW NAVBAR STYLING ########## */
   .link_container {
     display: none;
   }
@@ -185,6 +262,16 @@ body {
     margin: 0;
     display: block;
     padding-left: 20px;
+  }
+  /* ########## THE HERO WRTIE-UP CONTAINER STYLING ########## */
+  .hero-writeup-container {
+    padding-left: 20px;
+  }
+  .hero-writeup-container .hero-sub-section {
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 }
 @media screen and (max-width: 325px) {
