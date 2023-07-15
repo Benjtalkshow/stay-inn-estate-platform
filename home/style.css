@@ -308,7 +308,44 @@ body {
     align-items: center;
     margin: 0;
   }
+/* ########## MEDIA QUERY FOR FOOTER-SECTION ########## */
+.footer-section {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+  gap: 40px;
+  }
+  .sub-footer {
+    margin-bottom: 20px;
+  }
+  .sub-footer h1 {
+    font-size: 1.2em;
+  }
+  .sub-footer a {
+    font-size: 1em;
+  }
 }
+
+@media screen and (max-width: 720px) {
+  /* ########## MEDIA QUERY FOR FOOTER-SECTION 720px SCREEN SIZE ########## */
+  .footer-section {
+    padding: 0 10px;
+    gap: 15px;
+  }
+  .sub-footer {
+    align-items: flex-start;
+  }
+  .sub-footer h1 {
+    font-size: 1em;
+  }
+  .sub-footer a {
+    font-size: 0.9em;
+  }
+  .social a {
+    font-size: 1.2em;
+  }
+}
+
 @media screen and (max-width: 325px) {
   .navbar .hamburger {
     padding-right: 20px;
