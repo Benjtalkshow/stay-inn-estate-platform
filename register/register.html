@@ -10,41 +10,49 @@
 </head>
 <body>
     <div class="signup">
-        <div class="signup-form">
-            <form action="#">
-                <div class="logo">
-                    <img src="/assets/images/logo2.png" alt="logo">
-                </div>
-                <h1>Create Account</h1>
-                <p>This information will be used to create your account.</p>
-                <div class="google">
+        
+
+            <div class="theform">
+                <form action="">
+                    <div class="logo">
+                        <img src="/assets/images/logo2.png" alt="logo">
+                    </div>
+                    <h1>Create Account</h1>
+                    <p>This information will be used to create your account.</p>
+                <button class="google-button">
                     <img src="/assets/images/google.png" alt="google logo">
                     <p>Signup with Google</p>
-                </div>
+                </button>
                 <div class="hr-demarcation">
                     <div class="left-hr"></div>
                     <p>OR</p>
                     <div class="right-hr"></div>
                 </div>
                 <label for="name">Name</label>
-                <div class="name">
-                    <div class="icon name-icon"><input type="text" id="name"></div>
+                <div class="name input-container">
+                    <i class="fas fa-user left-icon"></i>
+                        <input type="text" id="name" required>
                 </div>
                 <label for="email">Email</label>
-                <div class="email">
-                    <div class="icon email-icon"><input type="email" id="email"></div>
+                <div class="email input-container">
+                    <i class="fas fa-envelope left-icon"></i>
+                    <input type="email" id="email" required>
                 </div>
                 <label for="password">Password</label>
-                <div class="password">
-                    <div class="icon psw-icon"><input type="password" id="password"></div>
+                <div class="password input-container">
+                    <input type="password" id="password" required>
                 </div>
                 <label for="confirm-password">Confirm Password</label>
-                <div class="confirm-password">
-                    <div class="icon confirm-psw-icon"><input type="password" id="confirm-password"></div>
+                <div class="confirm-password input-container">
+                    <input type="password" id="confirm-password" required>
                 </div>
-                <button>Create Account</button>
-            </form>
-        </div>
+                <button class="register-btn" type="submit">Create Account</button>
+            <div class="terms_privacy">
+                <input type="checkbox" checked>
+                <p>By signing up, you agree to our <a  href="#0">Terms & Privacy Policy </a></p>
+            </div>
+                </form>
+            </div>
         <div class="signup-bg-image">
             <img src="/assets/images/signup-signin-page.jpg" alt="">
         </div>
