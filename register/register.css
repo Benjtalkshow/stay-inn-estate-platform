@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --almostYellow: #d1ac00;
+  --almostDarkBlue: #004643;
+  --grey: #484848;
+  --almostWhite: #fbf6da;
+  --almostBlack: #0c1618;
+  --white: #fff;
+  --black: #000;
+  --zred: #949494;
+  --padding-of-40px: 40px;
+  --margin-of-40px: 40px;
+  --gap-of-40px: 40px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* SIGN UP SECTION */
+/* ########## SIGN UP STYLING SECTION ########## */
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.signup .signup-form {
+  width: 100%;
+  padding: 0 100px;
+}
+.signup .signup-bg-image {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow: hidden;
+}
+.signup .signup-bg-image img {
+  width: 100%;
+}
