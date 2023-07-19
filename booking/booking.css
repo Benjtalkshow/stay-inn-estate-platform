@@ -25,8 +25,21 @@ body {
   border: none;
   font-family: "Poppins", sans-serif;
 }
+.lazy-section {
+    transform: translateY(80px); 
+    opacity: 0; 
+  }
+  
+  .lazy-section.visible {
+    opacity: 1; 
+    transform: translateY(0px); 
+    transition-property: opacity, transform;
+    transition-duration: 1s, 2s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
 .logo {
-padding: 40px 0 20px 80px;
+padding: 40px 0 20px 158px;
 }
 .heading {
 text-align: center;
@@ -185,30 +198,17 @@ border-radius: 8px;
     background-color: var(--almostDarkBlue);
     color: var(--white);  
 }
-
-@media (max-width: 720px) {
-  
+@media screen and (max-width: 1000px) {
     .logo {
         padding:  40px;
     }
-    /* .booking {
-        flex-direction: column;
-        padding: 0;
-      }
-    .booking form {
-      width: 100%;
-      padding: 0 40px;
-    }
-    .booking-preview {
-      width: 100%;
-      background-color: #d1ac00;
-      padding: 0;
-    } */
     .booking {
         flex-direction: column;
-        align-items: stretch; /* Added */
-        padding: 0;
+        padding: 0 40px;
       }
+}
+@media (max-width: 720px) {
+  
       .booking form {
         width: 100%;
       }
@@ -224,10 +224,20 @@ border-radius: 8px;
       gap: 10px;
       padding-bottom: 10px;
     }
-    .checkin-checkout {
+    /* .content .checkin-checkout {
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       gap: 10px;
-      padding: 10px 0;
+    } */
+    .content .checkin-checkout {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        /* padding: 10px 0; */
+      }
+    .content .checkin-checkout button {
+        width: 100%;
     }
     .content .deluxe-1,
     .content .deluxe-2 {

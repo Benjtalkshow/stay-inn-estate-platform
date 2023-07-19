@@ -12,14 +12,14 @@
 </head>
 
 <body>
-    <div class="logo">
-        <img src="/assets/images/logo2.png" alt="">
+    <div class="logo lazy-section">
+        <img src="/assets/images/logo2.png" alt="logo">
     </div>
-    <div class="heading">
+    <div class="heading lazy-section">
         <h1>Get Information</h1>
         <p>Please fill out the following details to complete your hotel booking check-out</p>
     </div>
-    <div class="booking">
+    <div class="booking lazy-section">
         <form action="">
             <label for="name">Name</label>
             <div class="name input-container">
@@ -140,5 +140,47 @@
         $("#message").text("Invalid phone number").css("color", "red");
       }
     });
+
+
+    // Function to handle the intersection of the observed elements
+class BootStrapAnimation {
+  #section;
+  constructor(section) {
+    this.#section = section;
+    this.#observeIntersection();
+  }
+
+  #handleIntersection(entries, observer) {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    }
+  }
+
+  #observeIntersection() {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    };
+
+    const observer = new IntersectionObserver(
+      this.#handleIntersection,
+      observerOptions
+    );
+    observer.observe(this.#section);
+  }
+}
+
+function animateOnIt() {
+  const sections = document.querySelectorAll(".lazy-section");
+  for (const section of sections) {
+    new BootStrapAnimation(section);
+  }
+}
+
+animateOnIt(); 
 </script>
 </html>
