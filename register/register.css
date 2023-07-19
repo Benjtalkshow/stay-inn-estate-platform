@@ -28,7 +28,18 @@ body {
 
 /* SIGN UP SECTION */
 /* ########## SIGN UP STYLING SECTION ########## */
+.lazy-section {
+  transform: translateY(80px); 
+  opacity: 0; 
+}
 
+.lazy-section.visible {
+  opacity: 1; 
+  transform: translateY(0px); 
+  transition-property: opacity, transform;
+  transition-duration: 1s, 2s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 .signup {
   width: 100%;
   display: flex;
@@ -140,9 +151,6 @@ form .terms_privacy a {
   color: var(--almostYellow);
 }
 
-.signup-bg-image {
-  background-color: red;
-}
 .signup .signup-bg-image img {
   width: 100%;
   height: 100%;

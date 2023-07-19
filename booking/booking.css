@@ -42,11 +42,9 @@ font-size: .9em;
 display: flex;
 justify-content: center;
 gap: 100px;
-padding: 0 80px;
+/* padding: 0 80px; */
 }
-.booking form {
-width: 50%;
-}
+
 .booking form .input-container {
     align-items: center;
     border: 1px solid var(--almostDarkBlue);
@@ -82,11 +80,11 @@ width: 50%;
   }
   
 .booking .booking-preview {
-width: 50%;
+/* width: 50%; */
 color: var(--white);
 }
 .booking-preview .content {
-padding: 20px;
+padding: 20px 40px;
 background-color: var(--almostDarkBlue);
 border-radius: 8px;
 }
@@ -187,3 +185,63 @@ border-radius: 8px;
     background-color: var(--almostDarkBlue);
     color: var(--white);  
 }
+
+@media (max-width: 720px) {
+  
+    .logo {
+        padding:  40px;
+    }
+    /* .booking {
+        flex-direction: column;
+        padding: 0;
+      }
+    .booking form {
+      width: 100%;
+      padding: 0 40px;
+    }
+    .booking-preview {
+      width: 100%;
+      background-color: #d1ac00;
+      padding: 0;
+    } */
+    .booking {
+        flex-direction: column;
+        align-items: stretch; /* Added */
+        padding: 0;
+      }
+      .booking form {
+        width: 100%;
+      }
+      .booking-preview {
+        width: 100%;
+      }
+    .booking-preview .content {
+      padding: 10px;
+      width: 100%;
+    }
+    .content .img-container {
+      flex-direction: column;
+      gap: 10px;
+      padding-bottom: 10px;
+    }
+    .checkin-checkout {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0;
+    }
+    .content .deluxe-1,
+    .content .deluxe-2 {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+    }
+    .booking-preview .total {
+      font-size: 0.9em;
+      padding: 10px 0;
+    }
+    .booking-preview .pay-btn {
+      margin: 10px 0 30px 0;
+      gap: 10px;
+    }
+  }
+  
