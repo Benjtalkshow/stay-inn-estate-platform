@@ -175,6 +175,19 @@ body {
   font-weight: 600;
   color: var(--almostWhite);
 }
+.hero-writeup-container .writing-effect {
+  animation: blink 0.5s;
+}
+.hero-writeup-container .writing-effetz {
+  animation: blink 0.5s;
+}
+
+/* The keyframes for the blinking animation */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
 .hero-writeup-container .hero-writeup article {
   font-size: 1.2em;
   font-weight: 400;
@@ -258,6 +271,10 @@ body {
 .explore-sub-section .image-container img {
   max-width: 100%;
   height: auto;
+  transition: transform .2s;
+}
+.image-container img:hover {
+  transform: scale(1.1);
 }
 .explore-sub-section .ratings .fa-sharp {
   color: var(--almostYellow);
@@ -331,8 +348,11 @@ body {
   justify-content: center;
   width: 400px;
   height: 400px;
+  transition: transform .2s;
 }
-
+.popular-location-container .location-image:hover {
+  transform: scale(1.1);
+}
 
 .popular-location-container .location-image h1 {
   color: var(--white);
@@ -791,6 +811,9 @@ body {
   /* ########## MEDIA QUERY FOR HERO-WRITEUP-CONTAINER-SECTION 720px [SECTION 1] ########## */
   .hero-writeup-container .hero-writeup h1 {
     font-size: 2em;
+  }
+  .hero-writeup-container .hero-writeup article {
+    font-size: 1em;
   }
   /* ########## END OF MEDIA QUERY FOR HERO-WRITEUP-CONTAINER-SECTION 720px ########## */
 

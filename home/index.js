@@ -43,3 +43,41 @@ const checkDisplayHamburger = (mqh) => {
 };
 displayHamburger.addEventListener("change", checkDisplayHamburger);
 checkDisplayHamburger(displayHamburger);
+
+// Writing effect Animation
+function typeWriter() {
+  var i = 0; 
+  var txt = 'Find the Best';  
+  var speed = 100; 
+  function writerEffect() {
+    if (i < txt.length) { 
+      document.querySelector(".writing-effect").innerHTML += txt.charAt(i); 
+      i++; 
+      setTimeout(writerEffect, speed); 
+    }   
+  }
+  writerEffect();  
+}
+typeWriter();
+
+setTimeout(()=> {
+  function typeWriter2() {
+    var i = 0; 
+    var txt = 'Hotels in your city'; 
+    var speed = 100; 
+    function writerEffect() {
+      if (i < txt.length) { 
+        document.querySelector(".writing-effetz").innerHTML += txt.charAt(i); 
+        i++; 
+        setTimeout(writerEffect, speed); 
+      }
+    }
+    writerEffect();  
+  }
+  typeWriter2();
+}, 1500)
+
+
+
+
+

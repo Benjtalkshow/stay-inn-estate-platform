@@ -27,13 +27,13 @@ body {
 }
 
 .lazy-section {
-  transform: translateY(80px);
-  opacity: 0;
+  transform: translateY(80px); 
+  opacity: 0; 
 }
 
 .lazy-section.visible {
-  opacity: 1;
-  transform: translateY(0px);
+  opacity: 1; 
+  transform: translateY(0px); 
   transition-property: opacity, transform;
   transition-duration: 1s, 2s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);

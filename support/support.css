@@ -104,33 +104,34 @@ body {
     flex-wrap: wrap;
 }
 
-.navbar_btn .signin_btn a,
-.navbar_btn .register_btn a {
-    padding: 8px 25px;
-    border: 2px solid var(--almostDarkBlue);
-    border-radius: 8px;
-    transition: ease-in .3s;
+.navbar_btn .signin_btn ,
+.navbar_btn .register_btn  {
+  padding: 8px 15px;
+  border: 1px solid var(--almostDarkBlue);
+  border-radius: 8px;
+  transition: ease-in .3s;
+  cursor: pointer;
+  outline-width: 0;
+  font-size: 1.19em;
+}
+.navbar_btn .signin_btn {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.navbar_btn .signin_btn:hover {
+  background-color: var(--almostYellow);
+  border: 1px solid var(--almostYellow);
+}
+.navbar_btn .register_btn {
+  background-color: var(--almostDarkBlue);
+  color: var(--white);
+}
+.navbar_btn .register_btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--almostYellow);
 }
 
-.navbar_btn .signin_btn a:hover {
-    background-color: var(--almostDarkBlue);
-    color: var(--white);
-}
-
-.navbar_btn .register_btn a {
-    background-color: var(--almostDarkBlue);
-    color: var(--white);
-}
-
-.navbar_btn .signin_btn a {
-    background-color: transparent;
-    color: var(--almostDarkBlue);
-}
-
-.navbar_btn .register_btn a:hover {
-    background-color: transparent;
-    color: var(--almostDarkBlue)
-}
 
 .navbar .hamburger {
     display: none;

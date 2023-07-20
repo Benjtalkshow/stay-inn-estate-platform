@@ -4,9 +4,9 @@
 
 Stay-Inn is a hotel booking platform that aims to make your lodging experience within Nigeria easier and more enjoyable. With our platform, you can discover the perfect accommodation for your stay.
 
-<p align="center">
-![Demo](/assets/stayIn-hotel-booking-platform-demo.gif)
-</p>
+
+<p align="center"><img src="/assets/demo.gif"></p>
+
 
 
 ## Table of Contents
@@ -28,10 +28,10 @@ This project is a hotel booking platform called Stay-Inn, developed to help user
 ## Technologies Used:
 ### HTML
 ### CSS
-### JAVASCRIPT
-### FONTAWESOME ICON LIBRARY
-### INTERSECTION OBSERVER API (JS)
-### COUNTRY-SELECT JS LIBRARY
+### JavaScript
+### Font Awesome Icon Library
+### Intersection Observer API (JS)
+### Country-Select JavaScript Library
 ### PHONE NUMBER LIBRARY
 
 
