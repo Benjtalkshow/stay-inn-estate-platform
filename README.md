@@ -4,7 +4,9 @@
 
 Stay-Inn is a hotel booking platform that aims to make your lodging experience within Nigeria easier and more enjoyable. With our platform, you can discover the perfect accommodation for your stay.
 
-<p align="center">![Demo](/assets/stayIn-hotel-booking-platform-demo.gif)</p>
+<p align="center">
+![Demo](/assets/stayIn-hotel-booking-platform-demo.gif)
+</p>
 
 
 ## Table of Contents
