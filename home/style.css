@@ -111,16 +111,32 @@ body {
   flex-wrap: wrap;
 }
 
-.navbar_btn .signin_btn a {
-  padding: 8px 25px;
-  border: 2px solid var(--almostDarkBlue);
+.navbar_btn .signin_btn ,
+.navbar_btn .register_btn  {
+  padding: 8px 15px;
+  border: 1px solid var(--almostDarkBlue);
   border-radius: 8px;
+  transition: ease-in .3s;
+  cursor: pointer;
+  outline-width: 0;
+  font-size: 1.19em;
 }
-
-.navbar_btn .register_btn a {
-  padding: 8px 25px;
+.navbar_btn .signin_btn {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.navbar_btn .signin_btn:hover {
+  background-color: var(--almostYellow);
+  border: 1px solid var(--almostYellow);
+}
+.navbar_btn .register_btn {
   background-color: var(--almostDarkBlue);
-  border-radius: 8px;
+  color: var(--white);
+}
+.navbar_btn .register_btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--almostYellow);
 }
 
 .navbar .hamburger {
@@ -252,6 +268,7 @@ body {
 .explore-sub-section .address-bar {
   height: 0px;
   border: 1px solid rgb(255, 98, 0);
+  background-color: rgb(255, 98, 0);
   /* width: 260px; */
   width: 50%;
   margin: 20px 0;
@@ -280,21 +297,21 @@ body {
 
 /* SECTION 3 */
 /* ########## POPULAR LOCATION STYLING ########## */
-.popular-location {
+ .popular-location {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
 }
+
 .popular-location .popular-location-heading {
-  width: 79%;
-  padding: 40px 0;
+  width: 100%;
+  padding: 40px 0 40px 140px;
 }
 .popular-location .popular-location-heading h1 {
   font-weight: 600;
   text-align: left;
-  word-break: normal;
 }
 
 .popular-location-container {
@@ -316,9 +333,10 @@ body {
   height: 400px;
 }
 
+
 .popular-location-container .location-image h1 {
   color: var(--white);
-  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .popular-location button {
@@ -329,7 +347,7 @@ body {
   background-color: var(--almostDarkBlue);
   padding: 10px;
   font-size: 1em;
-  width: 15%;
+  width: 100px;
   margin-top: 50px;
   cursor: pointer;
 }
@@ -339,7 +357,7 @@ body {
   color: var(--black);
 }
 
-/* Location Images */
+/* Location Images */  
 .popular-location-container .location-1 {
   background-image: url(/assets/images/Popular-Location-1.png);
 }
@@ -362,7 +380,8 @@ body {
 
 .popular-location-container .location-6 {
   background-image: url(/assets/images/PopularLocation_6.jpg);
-}
+} 
+
 /* END OF SECTION 3 */
 
 /* SECTION 4 */
@@ -379,7 +398,8 @@ body {
   border-radius: 10px;
 }
 .discount-section .discount-writeup h1 {
-  font-size: 1.8em;
+  /* font-size: 1.8em; */
+  font-weight: 600;
   padding: 20px 0;
   word-wrap: break-word;
 }
@@ -401,6 +421,7 @@ body {
 }
 .discount-label .vertical-line {
   border: 1px solid var(--black);
+  background-color: var(--black);
   width: 1px;
   height: 100px;
 }
@@ -426,7 +447,8 @@ body {
   justify-content: center;
 }
 .discover-text h1 {
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
+  font-weight: 600;
 }
 .discover-text article {
   font-size: 1.2em;
@@ -453,6 +475,7 @@ body {
   border: 2px solid var(--black);
   border-radius: 10px;
   margin: 20px 0;
+  background-color: var(--black);
 }
 .discover-image {
   width: 600px;
@@ -498,7 +521,9 @@ body {
 .newsletter-text {
   text-align: center;
 }
-
+.newsletter-text h1 {
+  font-weight: 600;
+}
 .newsletter-input {
   position: relative;
   max-width: 800px;
@@ -583,7 +608,7 @@ body {
 
 /* ########## MEDIA QUERIES ########## */
 @media screen and (max-width: 1450px) {
-  /* ########## END OF MEDIA QUERY FOR DISCOVER-SECTION 1450px [SECTION 5] ########## */
+  /* ########## MEDIA QUERY FOR DISCOVER-SECTION 1450px [SECTION 5] ########## */
   .discover-section {
     flex-direction: column;
     height: auto;
@@ -696,7 +721,7 @@ body {
     margin-bottom: 10px;
   }
   .hero-writeup-container .hero-sub-section {
-    padding: 0;
+    padding: 20px 0;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -793,7 +818,7 @@ body {
     padding: 0 20px;
   }
   .discount-writeup {
-    padding: 0 20px;
+    padding: 0 20px 40px 20px;
   }
   .discount-label .vertical-line {
     width: 1px;
@@ -808,6 +833,7 @@ body {
   /* ########## MEDIA QUERY FOR DISCOVER-SECTION 720px [SECTION 4] ########## */
   .discover-text {
     padding: 20px;
+    margin-top: 0;
   }
 
   .discover-text h1 {
