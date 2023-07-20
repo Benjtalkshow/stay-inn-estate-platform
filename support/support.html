@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d1ac00" />
+    <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="support.css" />
+    <title>Support</title>
+    <!-- <script src="support.js"></script> -->
+</head>
+
+<body>
+    <!-- SECTION 1 -->
+    <!-- Navbar ul, li, a, and butons -->
+    <section class="top_dashboard lazy-section">
+        <nav class="navbar">
+            <div class="logo"><a href="/index.html"><img src="/assets/images/logo2.png" alt="logo"
+                        class="logo_png" /></a></div>
+            <div class="link_container">
+                <ul class="navbar_ul">
+                    <li class="linked_list"><a href="/index.html">Home</a></li>
+                    <li class="linked_list"><a href="/booking/booking.html">Bookings</a></li>
+                    <li class="linked_list"><a href="/support/support.html">Support</a></li>
+                </ul>
+                <div class="navbar_btn">
+                    <li class="signin_btn"><a href="/signin/signin.html">Sign in</a></li>
+                    <li class="register_btn"><a href="/register/register.html">Register</a></li>
+                </div>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars xbar"></i>
+                <i class="fa-solid fa-xmark xmark"></i>
+            </div>
+        </nav>
+        <!-- SECTION 2 -->
+        <section class="support">
+            <div class="text-container lazy-section">
+                <h1>Customer Support</h1>
+                <p>
+                    Welcome to our Customer Support! We are here <br>
+                    to assist you and ensure that your bookings are <br>
+                    nothing short of exceptional. <br><br>
+                    Our dedicated team is ready to answer your <br> questions, address any
+                    concerns, and provide the <br> assistance you need. Feel free to reach out to us <br>
+                    via the following channels:
+                </p>
+                <a href="#0"><i class="fa-solid fa-phone"></i> +234 123 456 7890</a> <br>
+                <a href="#0"><i class="fas fa-envelope left-icon"></i> stay@inn.com</a>
+            </div>
+            <div class="image-container lazy-section">
+                <img src="/assets/images/customer-support.jpg" alt="">
+            </div>
+        </section>
+        <!-- SECTION 3 -->
+        <form action="" class="lazy-section">
+            <h1>Leave a Message</h1>
+            <p>We value your feedback and are committed to continuously improving our services.</p>
+            <div class="input-parent-container">
+                <div class="divider">
+                    <label for="name">Full Name</label>
+                    <div class="name input-container">
+                        <select name="title" style="outline: none;">
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Mx">Mx</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Rev">Rev</option>
+                            <option value="Prof">Prof</option>
+                            <option value="Sir">Sir</option>
+                            <option value="Dame">Dame</option>
+                        </select>
+                        <input type="text" id="name" required>
+                        <i class="fas fa-user left-icon"></i>
+                    </div>
+                </div>
+                <div class="divider">
+                    <label for="email">Email</label>
+                    <div class="email input-container">
+                        <input type="email" id="email" required>
+                        <i class="fas fa-envelope left-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <label for="message">Message*</label>
+            <textarea name="message" id="message" class="message" id="" cols="30" rows="8" required></textarea>
+            <div class="btn-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+</body>
+<script src="/home/scrollOnView.js"></script>
+<script>
+    const bar = document.querySelector(".xbar");
+    const xmark = document.querySelector(".xmark");
+    const navBar = document.querySelector(".navbar");
+    const linkContainer = document.querySelector(".link_container");
+
+
+
+    // javascript code for hamburger menu
+    bar.addEventListener("click", (e) => {
+        e.preventDefault();
+        navBar.classList.add("display");
+        linkContainer.classList.add("active");
+        bar.style.display = "none";
+        xmark.style.display = "inline-block";
+        xmark.style.color = "#D1AC00";
+    });
+
+    xmark.addEventListener("click", (e) => {
+        e.preventDefault();
+        navBar.classList.remove("display");
+        linkContainer.classList.remove("active");
+        bar.style.display = "inline-block";
+        xmark.style.display = "none";
+    });
+
+    // Navbar responsiveness with the help of javascript method (matchMedia())
+    const mediaQueryActive = window.matchMedia('(min-width: 962px)');
+    const displayHamburger = window.matchMedia('(max-width:961px)');
+
+    const checkMediaQueryActive = (mq) => {
+        if (mq.matches) {
+            if (linkContainer.classList.contains('active')) {
+                linkContainer.classList.remove('active');
+                navBar.classList.remove('display')
+                xmark.style.display = "none"
+            }
+        }
+    };
+    mediaQueryActive.addEventListener('change', checkMediaQueryActive);
+    checkMediaQueryActive(mediaQueryActive);
+
+    const checkDisplayHamburger = (mqh) => {
+        if (mqh.matches) {
+            bar.style.display = "inline-block";
+        }
+    };
+    displayHamburger.addEventListener('change', checkDisplayHamburger);
+    checkDisplayHamburger(displayHamburger);
+</script>
+
+</html>
