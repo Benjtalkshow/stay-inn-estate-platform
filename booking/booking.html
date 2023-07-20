@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="booking.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/country-select-js/2.1.1/css/countrySelect.min.css">
+    <script src="/home/scrollOnView.js"></script>
     <title>Booking</title>
 </head>
 
@@ -142,47 +143,5 @@
         $("#message").text("Invalid phone number").css("color", "red");
       }
     });
-
-
-    // Function to handle the intersection of the observed elements
-class BootStrapAnimation {
-  #section;
-  constructor(section) {
-    this.#section = section;
-    this.#observeIntersection();
-  }
-
-  #handleIntersection(entries, observer) {
-    for (const entry of entries) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    }
-  }
-
-  #observeIntersection() {
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.3,
-    };
-
-    const observer = new IntersectionObserver(
-      this.#handleIntersection,
-      observerOptions
-    );
-    observer.observe(this.#section);
-  }
-}
-
-function animateOnIt() {
-  const sections = document.querySelectorAll(".lazy-section");
-  for (const section of sections) {
-    new BootStrapAnimation(section);
-  }
-}
-
-animateOnIt(); 
 </script>
 </html>
