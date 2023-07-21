@@ -44,40 +44,63 @@ const checkDisplayHamburger = (mqh) => {
 displayHamburger.addEventListener("change", checkDisplayHamburger);
 checkDisplayHamburger(displayHamburger);
 
+// Hero sub-section js function
+const hero_inputs = document.querySelectorAll(".hero-first-input");
+const searchBtn = document.querySelector(".searchbar");
+
+searchBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  const firstInputValue = hero_inputs[0].value;
+  const secondInputValue = hero_inputs[1].value;
+  const thirdInputValue = hero_inputs[2].value;
+  // reset inputs values
+  function inputReset() {
+    hero_inputs[0].value = "";
+    hero_inputs[1].value = "Person(s)";
+    hero_inputs[2].value = "";
+  }
+  if (typeof firstInputValue === "string" && !isNaN(secondInputValue) && Date.parse(thirdInputValue)) {
+// No location error
+    window.alert("No Available Loaction at the Moment")
+    inputReset();
+  } else {
+    window.alert(
+      "Invalid input values. The first input should be text, the second input should be a number, and the third input should be a valid date."
+    );
+    inputReset();
+  }
+});
+
+
 // Writing effect Animation
 function typeWriter() {
-  var i = 0; 
-  var txt = 'Find the Best';  
-  var speed = 100; 
+  var i = 0;
+  var txt = "Find the Best";
+  var speed = 100;
   function writerEffect() {
-    if (i < txt.length) { 
-      document.querySelector(".writing-effect").innerHTML += txt.charAt(i); 
-      i++; 
-      setTimeout(writerEffect, speed); 
-    }   
+    if (i < txt.length) {
+      document.querySelector(".writing-effect").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(writerEffect, speed);
+    }
   }
-  writerEffect();  
+  writerEffect();
 }
 typeWriter();
 
-setTimeout(()=> {
+setTimeout(() => {
   function typeWriter2() {
-    var i = 0; 
-    var txt = 'Hotels in your city'; 
-    var speed = 100; 
+    var i = 0;
+    var txt = "Hotels in your city";
+    var speed = 100;
     function writerEffect() {
-      if (i < txt.length) { 
-        document.querySelector(".writing-effetz").innerHTML += txt.charAt(i); 
-        i++; 
-        setTimeout(writerEffect, speed); 
+      if (i < txt.length) {
+        document.querySelector(".writing-effetz").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(writerEffect, speed);
       }
     }
-    writerEffect();  
+    writerEffect();
   }
   typeWriter2();
-}, 1500)
-
-
-
-
-
+}, 1500);
