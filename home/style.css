@@ -25,6 +25,7 @@ body {
   border: none;
   font-family: "Poppins", sans-serif;
 }
+
 /* SECTION 1 */
 /* ########## TOP HERO SECTION BACKGROUND IMAGE ########## */
 .top_dashboard {
@@ -37,13 +38,13 @@ body {
 }
 
 .lazy-section {
-  transform: translateY(80px); 
-  opacity: 0; 
+  transform: translateY(80px);
+  opacity: 0;
 }
 
 .lazy-section.visible {
-  opacity: 1; 
-  transform: translateY(0px); 
+  opacity: 1;
+  transform: translateY(0px);
   transition-property: opacity, transform;
   transition-duration: 1s, 2s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -63,6 +64,7 @@ body {
   right: 0;
   z-index: 2;
 }
+
 .link_container {
   display: flex;
   gap: 150px;
@@ -98,7 +100,7 @@ body {
   padding-bottom: 8px;
 }
 
-.navbar_ul .linked_list:hover > a {
+.navbar_ul .linked_list:hover>a {
   color: var(--almostYellow);
   border-bottom: 3px solid var(--almostYellow);
   transition: color 0.5s, border-bottom 0.5s, padding-bottom 0.5s;
@@ -111,8 +113,8 @@ body {
   flex-wrap: wrap;
 }
 
-.navbar_btn .signin_btn ,
-.navbar_btn .register_btn  {
+.navbar_btn .signin_btn,
+.navbar_btn .register_btn {
   padding: 8px 15px;
   border: 1px solid var(--almostDarkBlue);
   border-radius: 8px;
@@ -121,19 +123,23 @@ body {
   outline-width: 0;
   font-size: 1.19em;
 }
+
 .navbar_btn .signin_btn {
   background-color: transparent;
   border: 1px solid var(--white);
   color: var(--white);
 }
+
 .navbar_btn .signin_btn:hover {
   background-color: var(--almostYellow);
   border: 1px solid var(--almostYellow);
 }
+
 .navbar_btn .register_btn {
   background-color: var(--almostDarkBlue);
   color: var(--white);
 }
+
 .navbar_btn .register_btn:hover {
   background-color: transparent;
   border: 1px solid var(--almostYellow);
@@ -144,6 +150,7 @@ body {
   color: var(--white);
   cursor: pointer;
 }
+
 /* ########## ACTIVATING HAMBURGER MENU ########## */
 .link_container.active {
   display: flex;
@@ -169,31 +176,44 @@ body {
   padding: 150px 0 0 100px;
   margin-bottom: 100px;
 }
+
 .hero-writeup-container .hero-writeup h1 {
   font-size: 3.5em;
   line-height: 1;
   font-weight: 600;
   color: var(--almostWhite);
 }
+
 .hero-writeup-container .writing-effect {
   animation: blink 0.5s;
 }
+
 .hero-writeup-container .writing-effetz {
   animation: blink 0.5s;
 }
 
 /* The keyframes for the blinking animation */
 @keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 .hero-writeup-container .hero-writeup article {
   font-size: 1.2em;
   font-weight: 400;
   padding: 10px 0;
   color: var(--white);
 }
+
 .hero-sub-section {
   width: calc(100% - 100px);
   background-color: var(--almostDarkBlue);
@@ -207,6 +227,7 @@ body {
   opacity: 0.7;
   flex-wrap: wrap;
 }
+
 .hero-sub-section .hero-sub-section-btn {
   width: 150px;
   display: flex;
@@ -216,9 +237,11 @@ body {
   font-size: 0.8em;
   color: var(--white);
 }
+
 .hero-sub-section-btn .fa-regular {
   font-size: 1em;
 }
+
 .hero-sub-section input {
   padding: 10px;
   width: 146px;
@@ -226,9 +249,11 @@ body {
   border-radius: 8px;
   border-width: 0;
 }
+
 .hero-sub-section .top {
   padding-bottom: 8px;
 }
+
 .hero-sub-section .down button {
   padding: 10px;
   width: 250px;
@@ -237,15 +262,18 @@ body {
   border-width: 0;
   cursor: pointer;
 }
+
 .hero-sub-section .down .searchbar {
   background-color: var(--almostYellow);
   color: var(--white);
 }
+
 .hero-sub-section .down button .fa-solid,
 .hero-sub-section .down button .fa-regular {
   padding-left: 20px;
   cursor: pointer;
 }
+
 /* END OF SECTION 1 */
 
 /* SECTION 2 */
@@ -256,32 +284,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
+
 .explore-sub-section h1 {
   font-weight: 600;
   padding: 0 0 20px 0;
 }
+
 .explore-sub-section .child-images {
   display: flex;
   margin-top: 10px;
   align-items: center;
   gap: 10px;
 }
+
 .explore-sub-section .image-container img {
   max-width: 100%;
   height: auto;
   transition: transform .2s;
 }
-.image-container img:hover {
+
+.image-container .explore-images {
+  overflow: hidden;
+}
+
+.image-container .explore-images:hover img {
   transform: scale(1.1);
 }
+
+.image-container .big-img {
+  object-fit: cover;
+  object-position: center;
+  -o-object-fit: cover;
+  -o-object-position: center;
+}
+
 .explore-sub-section .ratings .fa-sharp {
   color: var(--almostYellow);
   padding: 0 0 20px 0;
   line-height: 0;
   word-wrap: break-word;
 }
+
 .explore-sub-section .address-bar {
   height: 0px;
   border: 1px solid rgb(255, 98, 0);
@@ -290,10 +335,12 @@ body {
   width: 50%;
   margin: 20px 0;
 }
+
 .explore-sub-section article,
 .explore-sub-section p {
   font-size: 1.2em;
 }
+
 .explore-sub-section button {
   outline-width: 0;
   border: 1px solid var(--almostDarkBlue);
@@ -306,15 +353,17 @@ body {
   margin-top: 20px;
   cursor: pointer;
 }
+
 .explore-sub-section button:hover {
   background-color: transparent;
   color: var(--black);
 }
+
 /* END OF SECTION 2 */
 
 /* SECTION 3 */
 /* ########## POPULAR LOCATION STYLING ########## */
- .popular-location {
+.popular-location {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,13 +371,14 @@ body {
   margin-top: 40px;
 }
 
-.popular-location .popular-location-heading {
-  width: 100%;
-  padding: 40px 0 40px 140px;
-}
+/* .popular-location .popular-location-heading {
+  width: 100%; 
+   padding: 40px 0 40px 140px;
+}  */
 .popular-location .popular-location-heading h1 {
   font-weight: 600;
   text-align: left;
+  padding-bottom: 20px;
 }
 
 .popular-location-container {
@@ -336,6 +386,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
+  width: 100%;
 }
 
 .popular-location-container .location-image {
@@ -346,12 +397,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  width: 100%;
   height: 400px;
-  transition: transform .2s;
+  transition: background-size 10s;
+  overflow: hidden;
 }
+
 .popular-location-container .location-image:hover {
-  transform: scale(1.1);
+  background-size: 120%;
+  transition: ease-in .5s;
 }
 
 .popular-location-container .location-image h1 {
@@ -377,9 +431,13 @@ body {
   color: var(--black);
 }
 
-/* Location Images */  
+/* Location Images */
 .popular-location-container .location-1 {
   background-image: url(/assets/images/Popular-Location-1.png);
+}
+
+.popular-location-container .location-1:hover {
+  background-size: 120%;
 }
 
 .popular-location-container .location-2 {
@@ -400,7 +458,7 @@ body {
 
 .popular-location-container .location-6 {
   background-image: url(/assets/images/PopularLocation_6.jpg);
-} 
+}
 
 /* END OF SECTION 3 */
 
@@ -413,16 +471,19 @@ body {
   background-color: var(--almostWhite);
   margin-top: 80px;
 }
+
 .discount-image img {
   max-width: 100%;
   border-radius: 10px;
 }
+
 .discount-section .discount-writeup h1 {
   /* font-size: 1.8em; */
   font-weight: 600;
   padding: 20px 0;
   word-wrap: break-word;
 }
+
 .discount-section .discount-label {
   margin: 40px 0;
   display: flex;
@@ -430,21 +491,25 @@ body {
   gap: 40px;
   width: 100%;
 }
+
 .discount-section .discount-label article {
   font-size: 1.2rem;
   word-wrap: break-word;
 }
+
 .discount-section .discount-label p {
   padding: 0 0 5px 0;
   font-size: 1.2rem;
   word-wrap: break-word;
 }
+
 .discount-label .vertical-line {
   border: 1px solid var(--black);
   background-color: var(--black);
   width: 1px;
   height: 100px;
 }
+
 /* END OF SECTION 4 */
 
 /* SECTION 5 */
@@ -454,10 +519,12 @@ body {
   height: 600px;
   margin-top: 120px;
   justify-content: center;
+  gap: 50px;
   align-items: center;
   display: flex;
   position: relative;
 }
+
 .discover-text {
   width: 600px;
   height: 600px;
@@ -466,13 +533,16 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .discover-text h1 {
   /* font-size: 1.5em; */
   font-weight: 600;
 }
+
 .discover-text article {
   font-size: 1.2em;
 }
+
 .discover-text button {
   outline-style: 0;
   border: 1px solid var(--almostYellow);
@@ -485,6 +555,7 @@ body {
   margin: 20px 0 0 0;
   cursor: pointer;
 }
+
 .discover-text button:hover {
   background-color: transparent;
   color: var(--almostYellow);
@@ -497,10 +568,13 @@ body {
   margin: 20px 0;
   background-color: var(--black);
 }
+
 .discover-image {
   width: 600px;
   height: 600px;
+  /* position: relative; */
 }
+
 .discover-image .image-1 {
   max-width: 600px;
   width: 600px;
@@ -512,17 +586,19 @@ body {
   right: 0;
   border-radius: 8px;
 }
+
 .discover-image .image-2 {
   max-width: 600px;
   width: 600px;
   max-height: 600px;
   height: 600px;
-  z-index: 2;
+  /* z-index: 2;
   position: absolute;
   right: 9%;
   bottom: -5%;
-  border-radius: 8px;
+  border-radius: 8px; */
 }
+
 /* END OF SECTION 5 */
 
 /* SECTION 7 */
@@ -541,9 +617,11 @@ body {
 .newsletter-text {
   text-align: center;
 }
+
 .newsletter-text h1 {
   font-weight: 600;
 }
+
 .newsletter-input {
   position: relative;
   max-width: 800px;
@@ -581,6 +659,7 @@ body {
   background-color: var(--almostYellow);
   color: var(--white);
 }
+
 /* END OF SECTION 6 */
 
 /* SECTION 7 */
@@ -593,16 +672,19 @@ body {
   justify-content: flex-start;
   padding: 0 0 50px 180px;
 }
+
 .sub-footer {
   display: flex;
   flex-direction: column;
 }
+
 .sub-footer h1 {
   font-size: 1em;
   font-weight: 700;
   padding: 10px 0;
   text-align: left;
 }
+
 .sub-footer a {
   text-decoration: none;
   font-size: 1em;
@@ -610,14 +692,17 @@ body {
   text-align: left;
   color: var(--black);
 }
+
 .sub-footer a:hover {
   color: var(--almostYellow);
 }
+
 .social {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+
 .social a {
   text-decoration: none;
   font-size: 1.5em;
@@ -628,10 +713,17 @@ body {
 
 /* ########## MEDIA QUERIES ########## */
 @media screen and (max-width: 1450px) {
+
   /* ########## MEDIA QUERY FOR DISCOVER-SECTION 1450px [SECTION 5] ########## */
   .discover-section {
     flex-direction: column;
     height: auto;
+  }
+
+  .discover-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .discover-text,
@@ -640,6 +732,11 @@ body {
     height: auto;
     padding: 0 20px;
   }
+    .discover-text {
+      padding-left: 80px;
+    }
+
+
   .discover-image .image-1,
   .discover-image .image-2 {
     position: static;
@@ -648,10 +745,12 @@ body {
     height: auto;
     margin: 20px 0;
   }
+
   /* ########## END OF MEDIA QUERY FOR DISCOVER-SECTION 1450px ########## */
 }
 
 @media screen and (max-width: 1153px) {
+
   /* ########## MEDIA QUERY FOR NAV BAR 1153px [SECTION 1] ########## */
   .logo {
     width: 100%;
@@ -659,63 +758,77 @@ body {
     justify-content: center;
     margin-bottom: 20px;
   }
+
   .link_container {
     width: 100%;
     justify-content: center;
   }
+
   .navbar_ul {
     margin-left: 100px;
   }
+
   .navbar_btn {
     padding: 0;
   }
+
   /* ########## END OF MEDIA QUERY FOR NAV BAR 1153px ########## */
 
   /* ########## MEDIA QUERY FOR HERO-WRITEUP CONTAINER  1153px [SECTION 1] ########## */
   .hero-sub-section {
     padding: 20px 10px;
   }
+
   /* ########## END OF MEDIA QUERY FOR HERO-WRITEUP CONTAINER  1153px ########## */
 
   /* ########## MEDIA QUERY FOR POPULAR LOCATION SECTION 1153px [SECTION 3] ########## */
   .popular-location-container .location-image {
-    width: 300px;
+    /* width: 300px; */
     height: 300px;
   }
+
   /* ########## END OF MEDIA QUERY FOR POPULAR LOCATION SECTION 1153px [SECTION 3] ########## */
 }
 
 @media screen and (max-width: 961px) {
+
   /* ########## MEDIA QUERY  FOR MOBILE VIEW NAVBAR 961px  1153px [SECTION 1] ########## */
   .link_container {
     display: none;
   }
+
   .link_container .navbar_ul {
     flex-direction: column;
     margin: 0;
     gap: 40px;
   }
+
   .navbar .link_container .navbar_btn {
     flex-direction: column;
   }
+
   .navbar .hamburger {
     display: block;
     color: var(--white);
     padding-right: 30px;
     font-size: 30px;
   }
+
   .hamburger .xmark {
     display: none;
   }
+
   .navbar {
     padding: 20px 0;
   }
+
   .navbar .logo {
     width: 0;
     margin: 0;
     display: block;
     padding-left: 20px;
   }
+
   /* ########## END OF MEDIA QUERY  FOR MOBILE VIEW NAVBAR 961px  1153px ########## */
 
   /* ########## MEDIA QUERY FOR HERO WRTIE-UP CONTAINER 961px [SECTION 1] ########## */
@@ -723,38 +836,47 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+
   .hero-writeup-container .hero-writeup h1 {
     font-size: 3em;
   }
+
   .hero-writeup-container .hero-writeup {
     margin-bottom: var(--margin-of-40px);
   }
+
   .hero-sub-section {
     gap: 10px;
     margin-top: 80px;
     width: 100%;
   }
+
   .hero-sub-section-btn .top {
     padding-top: 10px;
   }
+
   .hero-sub-section .down {
     margin-bottom: 10px;
   }
+
   .hero-writeup-container .hero-sub-section {
     padding: 20px 0;
     justify-content: center;
     align-items: center;
     margin: 0;
   }
+
   /* ########## END MEDIA QUERY FOR HERO WRTIE-UP CONTAINER 961px ########## */
 
   /* ########## MEDIA QUERY FOR EXPLORE EXCITING ROOM DEALS 961PX [SECTION 2] ########## */
   .explore {
     flex-direction: column;
   }
+
   .explore-sub-section .image-container {
     margin-top: 20px;
   }
+
   /* ########## END OF MEDIA QUERY FOR EXPLORE EXCITING ROOM DEALS 961px ########## */
 
   /* ########## MEDIA QUERY FOR POPULAR LOCATION SECTION 961px [SECTION 3] ########## */
@@ -762,12 +884,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-  .popular-location .popular-location-heading {
+
+  /* .popular-location .popular-location-heading {
     width: 53%;
     padding: 20px 0;
-  }
+  } */
   /* ########## END OF MEDIA QUERY FOR POPULAR LOCATION SECTION 961px ########## */
-  
+
   /* ########## MEDIA QUERY FOR NEWSLETTER-SECTION 961px [SECTION 6] ########## */
   .newsletter {
     flex-direction: column;
@@ -785,21 +908,25 @@ body {
   .newsletter-input input {
     min-width: 200px;
   }
+
   /* ########## END OF MEDIA QUERY FOR NEWSLETTER-SECTION 961px ########## */
 
   /* ########## MEDIA QUERY FOR FOOTER-SECTION 961px [SECTION 7] ########## */
   .footer-section {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
-    padding: 0 20px;
-    gap: 40px;
+    padding: 0 100px;
+    gap: 140px;
   }
+
   .sub-footer {
     margin-bottom: 20px;
   }
+
   .sub-footer h1 {
     font-size: 1.2em;
   }
+
   .sub-footer a {
     font-size: 1em;
   }
@@ -808,63 +935,86 @@ body {
 }
 
 @media screen and (max-width: 720px) {
+
   /* ########## MEDIA QUERY FOR HERO-WRITEUP-CONTAINER-SECTION 720px [SECTION 1] ########## */
   .hero-writeup-container .hero-writeup h1 {
     font-size: 2em;
   }
+
   .hero-writeup-container .hero-writeup article {
     font-size: 1em;
   }
+
   /* ########## END OF MEDIA QUERY FOR HERO-WRITEUP-CONTAINER-SECTION 720px ########## */
 
   /* ########## MEDIA QUERY FOR POPULAR LOCATION SECTION 720px [SECTION 3] ########## */
   .popular-location-container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-columns: repeat(1, 1fr); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* grid-template-rows: repeat(2, 1fr); */
     gap: 10px;
   }
-  .popular-location .popular-location-heading {
+
+  /* .popular-location .popular-location-heading {
     width: 35%;
     padding: 20px 0;
-  }
+  } */
   .popular-location-container .location-image {
-    width: 300px;
+    /* width: 300px; */
     height: 300px;
   }
+
   /* ########## END OF MEDIA QUERY FOR POPULAR LOCATION SECTION 720px ########## */
 
   /* ########## MEDIA QUERY FOR DISCOUNT-SECTION 720px [SECTION 4] ########## */
   .discount-section {
     flex-direction: column;
   }
+
   .discount-section .discount-image {
     padding: 0 20px;
   }
+
   .discount-writeup {
     padding: 0 20px 40px 20px;
   }
+
   .discount-label .vertical-line {
     width: 1px;
     height: 100px;
   }
+
   .discount-section .discount-label {
     flex-direction: row;
     gap: 20px;
   }
+
   /* ########## END OF MEDIA QUERY FOR DISCOUNT-SECTION 720px ########## */
 
   /* ########## MEDIA QUERY FOR DISCOVER-SECTION 720px [SECTION 4] ########## */
   .discover-text {
-    padding: 20px;
+    padding: 30px;
     margin-top: 0;
   }
 
   .discover-text h1 {
     font-size: 1.2em;
   }
+
   .discover-image {
     margin: 0 auto;
   }
+
+  .discover-image .image-1,
+  .discover-image .image-2 {
+    width: 95%;
+    max-width: 95%;
+  }
+
   .discover-text article {
     font-size: 1em;
   }
@@ -873,58 +1023,73 @@ body {
     max-width: 100%;
     font-size: 1em;
   }
+
   /* ########## END OF MEDIA QUERY FOR DISCOVER-SECTION 720px ########## */
 
-   /* ########## MEDIA QUERY FOR NEWSLETTER-SECTION 720px [SECTION 6] ########## */
-   .newsletter-input {
+  /* ########## MEDIA QUERY FOR NEWSLETTER-SECTION 720px [SECTION 6] ########## */
+  .newsletter-input {
     width: 400px;
   }
+
   /* ########## END OF MEDIA QUERY FOR NEWSLETTER-SECTION 720px ########## */
 
   /* ########## MEDIA QUERY FOR FOOTER-SECTION 720px SCREEN SIZE [SECTION 7] ########## */
   .footer-section {
-    padding: 0 10px;
-    gap: 15px;
+    padding: 0 70px;
+    flex-wrap: wrap;
+    gap: 40px;
   }
+
   .sub-footer {
     align-items: flex-start;
   }
+
   .sub-footer h1 {
     font-size: 1em;
   }
+
   .sub-footer a {
     font-size: 0.9em;
   }
+
   .social a {
     font-size: 1.2em;
   }
+
   /* ########## END OF MEDIA QUERY FOR FOOTER-SECTION 720px ########## */
 }
 
 @media screen and (max-width: 480px) {
+
   /* ########## MEDIA QUERY FOR NEWSLETTER-SECTION 480px [SECTION 6] ########## */
   .newsletter-input {
     max-width: 100%;
   }
+
   /* ########## END OF MEDIA QUERY FOR NEWSLETTER-SECTION 480px ########## */
 }
 
 @media screen and (max-width: 325px) {
+
   /* ########## MEDIA QUERY FOR NAV BAR SECTION 325PX [SECTION 1] ########## */
   .navbar .hamburger {
     padding-right: 20px;
   }
+
   .link_container.active {
     top: 87px;
   }
+
   .navbar .logo {
     padding-left: 20px;
     padding-right: 0;
     display: block;
   }
+
   .navbar .logo img {
     width: 50px;
   }
+
   /* ########## END OF MEDIA QUERY FOR NAV BAR SECTION 325PX ########## */
 
   /* ########## MEDIA QUERY FOR EXPLORE EXCITING ROOM DEALS 325px [SECTION 2] ########## */
@@ -932,20 +1097,23 @@ body {
   .explore-sub-section button {
     padding: 10px 40px;
   }
+
   /* ########## END OF MEDIA QUERY FOR EXPLORE EXCITING ROOM DEALS 325px ########## */
 
   /* ########## MEDIA QUERY FOR POPULAR LOCATION SECTION 325px [SECTION 3] ########## */
   .popular-location button {
     width: 50%;
   }
-  .popular-location .popular-location-heading {
+
+  /* .popular-location .popular-location-heading {
     width: 80%;
     padding: 20px 0;
-  }
+  } */
   .popular-location-container .location-image {
-    width: 150px;
+    /* width: 150px; */
     height: 150px;
   }
+
   /* ########## END OF MEDIA QUERY FOR POPULAR LOCATION SECTION 325px ########## */
 
   /* ########## MEDIA QUERY FOR DISCOUNT-SECTION 325px [SECTION 4] ########## */
@@ -953,9 +1121,11 @@ body {
     width: 200px;
     height: 1px;
   }
+
   .discount-section .discount-label {
     flex-direction: column;
     gap: 20px;
   }
+
   /* ########## END OF MEDIA QUERY FOR DISCOUNT-SECTION 325px ########## */
 }

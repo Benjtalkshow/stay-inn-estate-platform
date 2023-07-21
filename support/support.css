@@ -116,12 +116,13 @@ body {
 }
 .navbar_btn .signin_btn {
   background-color: transparent;
-  border: 1px solid var(--white);
-  color: var(--white);
+  border: 1px solid var(--almostDarkBlue);
+  color: var(--almostDarkBlue);
 }
 .navbar_btn .signin_btn:hover {
   background-color: var(--almostYellow);
   border: 1px solid var(--almostYellow);
+  color: var(--white);
 }
 .navbar_btn .register_btn {
   background-color: var(--almostDarkBlue);
@@ -130,6 +131,7 @@ body {
 .navbar_btn .register_btn:hover {
   background-color: transparent;
   border: 1px solid var(--almostYellow);
+  color: var(--almostDarkBlue);
 }
 
 

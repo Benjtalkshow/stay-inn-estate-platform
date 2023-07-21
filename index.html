@@ -61,7 +61,7 @@
             <p>Location</p>
           </div>
           <div class="hero-sub-section-btn down">
-            <input type="text" placeholder="Enter Location" />
+            <input class="hero-first-input" type="text" placeholder="Enter Location" />
           </div>
         </div>
         <div>
@@ -71,12 +71,12 @@
           </div>
           <div class="hero-sub-section-btn down">
             <button>
-              <select name="" id="" style="border: 0; outline-width: 0; outline-color: 0; width: 80%;">
-                <option value="">Person(s)</option>
-                <option value="">Male</option>
-                <option value="">Female</option>
-                <option value="">Kid</option>
-                <option value="">Adult</option>
+              <select class="hero-first-input"  name="" id="" style="border: 0; outline-width: 0; outline-color: 0; width: 80%;">
+                <option value="Person(s)">Person(s)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
               </select>
               <!-- Person(s) <i class="fa-solid fa-chevron-down"></i> -->
             </button>
@@ -88,7 +88,7 @@
           </div>
           <div class="hero-sub-section-btn down">
             <!-- <button> -->
-            <input type="date" name="" id="" style="background-color: #fff;">
+            <input class="hero-first-input" type="date" name="" id="" style="background-color: #fff;">
             <!-- Date <i class="fa-solid fa-chevron-down"></i> -->
             <!-- </button> -->
           </div>
@@ -114,11 +114,11 @@
     <div class="explore-sub-section">
       <h1>Explore Exciting Room Deals</h1>
       <div class="image-container">
-        <div class="explore-images exp-img-1"><img src="/assets/images/Hotel_Image_1.jpg" alt="Hotel_Image_1"></div>
+        <div class="explore-images exp-img-1"><img src="/assets/images/Hotel_Image_1.jpg" alt="Hotel_Image_1" class="big-img" height="365px" width="550px" draggable="true"></div>
         <div class="child-images">
-          <div class="explore-images exp-img-2"><img src="/assets/images/Hotel_Image_2.jpg" alt="Hotel_Image_2"></div>
-          <div class="explore-images exp-img-3"><img src="/assets/images/Hotel_Image_3.jpg" alt="Hotel_Image_3"></div>
-          <div class="explore-images exp-img-4"><img src="/assets/images/Hotel_Image_2.jpg" alt="Hotel_Image_4"></div>
+          <div class="explore-images exp-img-2"><img src="/assets/images/Hotel_Image_2.jpg" alt="Hotel_Image_2" class="grid-img"></div>
+          <div class="explore-images exp-img-3"><img src="/assets/images/Hotel_Image_3.jpg" alt="Hotel_Image_3" class="grid-img"></div>
+          <div class="explore-images exp-img-4"><img src="/assets/images/Hotel_Image_2.jpg" alt="Hotel_Image_4" class="grid-img"></div>
         </div>
       </div>
     </div>
@@ -146,29 +146,32 @@
   <!-- SECTION 3 -->
   <!-- Popular location section -->
   <section class="popular-location lazy-section">
-    <div class="popular-location-heading">
-      <h1>Popular Locations</h1>
+  
+<div style="width: 90%;">
+  <div class="popular-location-heading">
+    <h1>Popular Locations</h1>
+  </div>
+  <div class="popular-location-container">
+    <div class="location-image location-1">
+      <h1>Abuja</h1>
     </div>
-    <div class="popular-location-container">
-      <div class="location-image location-1">
-        <h1>Abuja</h1>
-      </div>
-      <div class="location-image location-2">
-        <h1>Lagos</h1>
-      </div>
-      <div class="location-image location-3">
-        <h1>Port Hacourt</h1>
-      </div>
-      <div class="location-image location-4">
-        <h1>Owerri</h1>
-      </div>
-      <div class="location-image location-5">
-        <h1>Kano</h1>
-      </div>
-      <div class="location-image location-6">
-        <h1>Calabar</h1>
-      </div>
+    <div class="location-image location-2">
+      <h1>Lagos</h1>
     </div>
+    <div class="location-image location-3">
+      <h1>Port Hacourt</h1>
+    </div>
+    <div class="location-image location-4">
+      <h1>Owerri</h1>
+    </div>
+    <div class="location-image location-5">
+      <h1>Kano</h1>
+    </div>
+    <div class="location-image location-6">
+      <h1>Calabar</h1>
+    </div>
+  </div>
+</div> 
     <!-- "See More" button -->
     <button>See More</button>
   </section>

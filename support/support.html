@@ -98,7 +98,7 @@
     const xmark = document.querySelector(".xmark");
     const navBar = document.querySelector(".navbar");
     const linkContainer = document.querySelector(".link_container");
-
+const logo = document.querySelector('.logo_png')
 
 
     // javascript code for hamburger menu
@@ -109,6 +109,7 @@
         bar.style.display = "none";
         xmark.style.display = "inline-block";
         xmark.style.color = "#D1AC00";
+        logo.src = "/assets/images/logo.png"
     });
 
     xmark.addEventListener("click", (e) => {
@@ -117,6 +118,7 @@
         linkContainer.classList.remove("active");
         bar.style.display = "inline-block";
         xmark.style.display = "none";
+        logo.src = "/assets/images/logo2.png"
     });
 
     // Navbar responsiveness with the help of javascript method (matchMedia())
@@ -143,5 +145,4 @@
     displayHamburger.addEventListener('change', checkDisplayHamburger);
     checkDisplayHamburger(displayHamburger);
 </script>
-
 </html>
