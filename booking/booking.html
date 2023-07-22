@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#d1ac00" />
+    <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/country-select-js/2.1.1/css/countrySelect.min.css">
+    <title>Booking</title>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="/index.html">
+            <img src="/assets/images/logo2.png" alt="logo">
+        </a>
+    </div>
+    <div class="heading">
+        <h1>Get Information</h1>
+        <p>Please fill out the following details to complete your hotel booking check-out</p>
+    </div>
+    <div class="booking lazy-section">
+        <form action="">
+            <label for="name">Name</label>
+            <div class="name input-container">
+                <select name="title" style="outline: none;">
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="Ms">Ms</option>
+                    <option value="Miss">Miss</option>
+                    <option value="Mx">Mx</option>
+                    <option value="Dr">Dr</option>
+                    <option value="Rev">Rev</option>
+                    <option value="Prof">Prof</option>
+                    <option value="Sir">Sir</option>
+                    <option value="Dame">Dame</option>
+                </select>
+
+                <input type="text" id="name" required style="padding-left: 5px;">
+                <i class="fas fa-user right-icon"></i>
+            </div>
+            <label for="email">Email</label>
+            <div class="email input-container">
+                <input type="email" id="email" required>
+                <i class="fas fa-envelope right-icon"></i>
+            </div>
+            <label for="phone-number">Phone Number</label>
+            <div class="phone-number input-container">
+                <div id="country" class="country-select"></div>
+                <input type="tel" id="phone" class="phone-number" placeholder="+234" style="padding-left: 43px;">
+                <i class="fa-solid fa-phone"></i>
+                <div class="validation-message" id="message"></div>
+            </div>
+            <div class="terms_privacy">
+                <input type="checkbox" checked>
+                <p>By signing up, you agree to our <a href="#0">Terms & Privacy Policy </a></p>
+            </div>
+        </form>
+        <div class="booking-preview lazy-section">
+            <div class="content">
+                <div class="img-container">
+                    <img src="/assets/images/booking-img.jpg" alt="hotel booking">
+                    <div class="txt-1">
+                        <h1>Exclusive Deluxe Hotel & Suite</h1>
+                        <p>Mo Sandie Crescent, Garki - Abuja</p>
+                    </div>
+                </div>
+                <div class="checkin-checkout">
+                    <div class="checkin">
+                        <div class="first-label">Check-In/Check-Out</div>
+                        <input type="date">
+                    </div>
+                    <div class="guest">
+                        <div class="second-label">Guest(s)</div>
+                        <button><i class="fas fa-user right-icon"></i> &#9662;</button>
+                    </div>
+                </div>
+                <div class="deluxe-1">
+                    <h1>Deluxe Room</h1>
+                    <div class="price">
+                        <h1>₦7,250</h1>
+                        <p>Per Night</p>
+                        <button>Select Room</button>
+                    </div>
+                </div>
+                <div class="deluxe-2">
+                    <h1>Deluxe Room</h1>
+                    <div class="price">
+                        <h1>₦41,250</h1>
+                        <p>Per Night</p>
+                        <button>Select Room</button>
+                    </div>
+                </div>
+            </div>
+            <h1 class="total">Total ₦0</h1>
+            <a href="#0">View More option rooms</a>
+            <div class="pay-btn">
+                <button class="pay-now">Pay Now</button>
+                <button class="book-on-hold">Book on Hold</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/country-select-js/2.1.1/js/countrySelect.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.9.42/libphonenumber-js.min.js"></script>
+
+<script>
+    $("#country").countrySelect({
+        preferredCountries: ["ng", "us", "gb", "ca", "au"]
+    });
+
+    // Trigger the change event to display the phone dialing code for the default country
+    $("#country").trigger("change");
+
+    // Display the phone dialing code on country change
+    $("#country").on("change", function () {
+        // Get the phone dialing code
+        var dialCode = $("#country").countrySelect("getSelectedCountryData").dialCode;
+
+        // Set the value of the phone input to the phone dialing code with a plus sign
+        $("#phone").val("+" + dialCode);
+    });
+
+    // Validate the phone number on input change
+    $("#phone").on("input", function () {
+        // Get the country code and phone number
+        var countryCode = $("#country").countrySelect("getSelectedCountryData").iso2;
+        var phoneNumber = $(this).val();
+
+        // Create a phone number object using libphonenumber-js library
+        var phone = libphonenumber.parsePhoneNumber(phoneNumber, countryCode);
+
+        // Check if the phone number is valid
+        if (phone.isValid()) {
+            // Show a success message
+            $("#message").text("Valid phone number").css("color", "green");
+        } else {
+            // Show an error message
+            $("#message").text("Invalid phone number").css("color", "red");
+        }
+    });
+
+    // Function to handle the intersection of the observed elements
+class BootStrapAnimation {
+  #section;
+  constructor(section) {
+    this.#section = section;
+    this.#observeIntersection();
+  }
+
+  #handleIntersection(entries, observer) {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    }
+  }
+
+  #observeIntersection() {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    };
+
+    const observer = new IntersectionObserver(
+      this.#handleIntersection,
+      observerOptions
+    );
+    observer.observe(this.#section);
+  }
+}
+
+function animateOnIt() {
+  const sections = document.querySelectorAll(".lazy-section");
+  for (const section of sections) {
+    new BootStrapAnimation(section);
+  }
+}
+
+animateOnIt();
+</script>
+
+</html>
