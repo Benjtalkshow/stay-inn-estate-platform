@@ -628,7 +628,7 @@ body {
   max-width: 800px;
 }
 
-.newsletter-input input[type="text"] {
+.newsletter-input input {
   padding: 15px;
   width: 100%;
   min-width: 800px;
