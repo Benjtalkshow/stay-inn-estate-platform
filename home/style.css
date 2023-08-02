@@ -636,7 +636,7 @@ body {
   border: 0;
   color: var(--white);
   background-color: var(--almostDarkBlue);
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .newsletter-input input::placeholder {
   color: var(--almostWhite);
