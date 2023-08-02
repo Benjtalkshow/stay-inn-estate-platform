@@ -266,6 +266,7 @@ body {
 .hero-sub-section .down .searchbar {
   background-color: var(--almostYellow);
   color: var(--white);
+  font-weight: bold;
 }
 
 .hero-sub-section .down button .fa-solid,
@@ -627,7 +628,7 @@ body {
   max-width: 800px;
 }
 
-.newsletter-input input {
+.newsletter-input input[type="text"] {
   padding: 15px;
   width: 100%;
   min-width: 800px;
@@ -635,9 +636,11 @@ body {
   border: 0;
   color: var(--white);
   background-color: var(--almostDarkBlue);
-  border-radius: 20px;
+  border-radius: 30px;
 }
-
+.newsletter-input input::placeholder {
+  color: var(--almostWhite);
+}
 .send-icon {
   width: 45px;
   height: 45px;
@@ -649,7 +652,8 @@ body {
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  border: 1px solid var(--almostDarkBlue);
+  outline-style: none;
+  border: none;
   top: 0;
   right: -1%;
   transition: background-color 0.3s ease;
