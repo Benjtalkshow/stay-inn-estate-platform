@@ -1,0 +1,111 @@
+[
+    {
+      "image": "https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "heading": "CAPITAL CROWN INN",
+      "location": "Asokor, Lagos",
+      "priceRange": "From N50,000 per Night",
+      "description" : "Ideally located in close proximity to major businesses, our hotel is a prime <br> choice for the numerous investors coming into the country. With its blend of beauty, <br> style, and privacy, our apartment offers everything needed for <br> a truly enjoyable stay. Experience the perfect combination of affordability, <br> convenience, sophistication, and a warm atmosphere at our hotel.",
+      "additionalImages": [
+        "https://images.pexels.com/photos/271618/pexels-photo-271618.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1134176/pexels-photo-1134176.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ]
+    },
+    {
+      "image": "https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "heading": "ZUMA OASIS RESORT",
+      "location": "Utako, Abuja",
+      "priceRange": "From N60,000 per Night",
+      "description" : "Ideally located in close proximity to major businesses, our hotel is a prime <br> choice for the numerous investors coming into the country. With its blend of beauty, <br> style, and privacy, our apartment offers everything needed for <br> a truly enjoyable stay. Experience the perfect combination of affordability, <br> convenience, sophistication, and a warm atmosphere at our hotel.",
+      "additionalImages": [
+        "https://images.pexels.com/photos/161758/governor-s-mansion-montgomery-alabama-grand-staircase-161758.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ]
+    },
+    {
+      "image":"https://images.pexels.com/photos/460537/pexels-photo-460537.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "heading": "ROYAL CREST HOTEL",
+      "location": "Gwarimpa, Abuja",
+      "priceRange": "From N40,000 per Night", 
+      "description" : "Ideally located in close proximity to major businesses, our hotel is a prime <br> choice for the numerous investors coming into the country. With its blend of beauty, <br> style, and privacy, our apartment offers everything needed for <br> a truly enjoyable stay. Experience the perfect combination of affordability, <br> convenience, sophistication, and a warm atmosphere at our hotel.",
+      "additionalImages": [
+        "https://images.pexels.com/photos/460537/pexels-photo-460537.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1055056/pexels-photo-1055056.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/2017802/pexels-photo-2017802.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ]
+    },
+    {
+      "image":"https://images.pexels.com/photos/53577/hotel-architectural-tourism-travel-53577.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "heading": "ROYAL PALACE HOTEL",
+      "location": "Agbani Road, Enugu",
+      "priceRange": "From N5000 per Night",
+      "description" : "Ideally located in close proximity to major businesses, our hotel is a prime <br> choice for the numerous investors coming into the country. With its blend of beauty, <br> style, and privacy, our apartment offers everything needed for <br> a truly enjoyable stay. Experience the perfect combination of affordability, <br> convenience, sophistication, and a warm atmosphere at our hotel.",
+      "additionalImages": [
+        "https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/53577/hotel-architectural-tourism-travel-53577.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ]
+    },
+    {
+      "image": "https://images.pexels.com/photos/594077/pexels-photo-594077.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "heading": "HOTEL SUNSHINE",
+      "location": "Ugwuaji Bridge, Enugu",
+      "priceRange": "From N70,000 per Night",
+      "description" : "Ideally located in close proximity to major businesses, our hotel is a prime <br> choice for the numerous investors coming into the country. With its blend of beauty, <br> style, and privacy, our apartment offers everything needed for <br> a truly enjoyable stay. Experience the perfect combination of affordability, <br> convenience, sophistication, and a warm atmosphere at our hotel.",
+      "additionalImages": [
+        "https://images.pexels.com/photos/271643/pexels-photo-271643.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/9959711/pexels-photo-9959711.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/6758528/pexels-photo-6758528.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ]
+    },
+    {
+      "image": "https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "heading": "PLATINUM BON HOTEL",
+      "location": "Mbano, Imo",
+      "priceRange": "From N75,000 per Night",
+      "description" : "Ideally located in close proximity to major businesses, our hotel is a prime <br> choice for the numerous investors coming into the country. With its blend of beauty, <br> style, and privacy, our apartment offers everything needed for <br> a truly enjoyable stay. Experience the perfect combination of affordability, <br> convenience, sophistication, and a warm atmosphere at our hotel.",
+      "additionalImages": [
+        "https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/2869215/pexels-photo-2869215.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/2507010/pexels-photo-2507010.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ]
+    },
+    {
+      "image": "https://images.pexels.com/photos/15779835/pexels-photo-15779835/free-photo-of-light-city-road-traffic.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "heading": "OAKLAND HOTEL",
+      "location": "Rumuibekwe, PortHarcourt",
+      "priceRange": "From N25,000 per Night",
+      "description" : "Ideally located in close proximity to major businesses, our hotel is a prime <br> choice for the numerous investors coming into the country. With its blend of beauty, <br> style, and privacy, our apartment offers everything needed for <br> a truly enjoyable stay. Experience the perfect combination of affordability, <br> convenience, sophistication, and a warm atmosphere at our hotel.",
+      "additionalImages": [
+        "https://images.pexels.com/photos/1571458/pexels-photo-1571458.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1571470/pexels-photo-1571470.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/15779835/pexels-photo-15779835/free-photo-of-light-city-road-traffic.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ]
+    },
+    {
+      "image": "https://images.pexels.com/photos/5950654/pexels-photo-5950654.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "heading": "VIRGIN HOTEL",
+      "location": "Ezzagu, Ebonyi",
+      "priceRange": "From N50,000 per Night",
+      "description" : "Ideally located in close proximity to major businesses, our hotel is a prime <br> choice for the numerous investors coming into the country. With its blend of beauty, <br> style, and privacy, our apartment offers everything needed for <br> a truly enjoyable stay. Experience the perfect combination of affordability, <br> convenience, sophistication, and a warm atmosphere at our hotel.",
+      "additionalImages": [
+        "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/2988860/pexels-photo-2988860.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/1571467/pexels-photo-1571467.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ]
+    },
+    {
+      "image": "https://images.pexels.com/photos/12309388/pexels-photo-12309388.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "heading": "HOTEL SILVIA",
+      "location": "Nanka, Anambra",
+      "priceRange": "From N150,000 per Night",
+      "description" : "Ideally located in close proximity to major businesses, our hotel is a prime <br> choice for the numerous investors coming into the country. With its blend of beauty, <br> style, and privacy, our apartment offers everything needed for <br> a truly enjoyable stay. Experience the perfect combination of affordability, <br> convenience, sophistication, and a warm atmosphere at our hotel.",
+      "additionalImages": [
+        "https://images.pexels.com/photos/4112601/pexels-photo-4112601.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/2227832/pexels-photo-2227832.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/3016428/pexels-photo-3016428.jpeg?auto=compress&cs=tinysrgb&w=600"
+      ]
+    }
+  ]
+  

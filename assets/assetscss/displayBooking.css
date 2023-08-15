@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Bokking display section  */
+.searchAndBook {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    padding: 0 20px;
+}
+
+.bookingDisplay {
+    margin-top: 8rem;
+    border: 2px solid var(--almostDarkBlue);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bookingDisplay .display1,
+.bookingDisplay .display2,
+.bookingDisplay .display3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+    padding: 20px 20px;
+}
+
+.bookingDisplay .display1 .sub-display2 {
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+}
+
+.bookingDisplay .display1 input {
+    border: none;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    outline-style: none;
+    font-weight: 900;
+    font-size: .9rem;
+    color: var(--black);
+    transition: all .3s;
+    border-radius: 10px;
+}
+
+.bookingDisplay .display1 input::placeholder {
+    font-weight: 900;
+    font-size: .9rem;
+    color: var(--black);
+    font-family: "Poppins", sans-serif;
+}
+
+.display1 input:focus {
+    border: 1px solid var(--almostDarkBlue);
+    padding-left: 2px;
+}
+
+.bookingDisplay .display2 {
+    border-left: 2px solid var(--almostDarkBlue);
+    border-right: 2px solid var(--almostDarkBlue);
+    text-align: center;
+}
+
+.display1 .destination,
+.display2 .checkIn-title,
+.display2 .checkOut-title,
+.display2 .No-of-nights,
+.display3 .guests {
+    color: var(--pureGrey);
+}
+
+
+.bookingDisplay .display3 .sub-display7 .searchbar {
+    background-color: var(--almostYellow);
+    color: var(--white);
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+}
+
+@media screen and (max-width: 1249px) {
+    .bookingDisplay .display1 .sub-display2 {
+        align-items: center;
+    }
+
+    .bookingDisplay .display1,
+    .bookingDisplay .display2,
+    .bookingDisplay .display3 {
+        padding: 15px 10px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .bookingDisplay {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bookingDisplay .display1 {
+        border-bottom: 2px solid var(--almostDarkBlue);
+    }
+
+    .bookingDisplay .display2 {
+        border-bottom: 2px solid var(--almostDarkBlue);
+        border-right: none;
+    }
+
+    .bookingDisplay .display3 {
+        border-right: 2px solid var(--almostDarkBlue);
+        margin-left: 2px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .bookingDisplay {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .bookingDisplay .display2 {
+        border-left: none;
+    }
+}
+
+@media screen and (max-width: 365px) {
+
+    .bookingDisplay .display1,
+    .bookingDisplay .display3 {
+        width: 100%;
+        gap: 0rem;
+        padding: 10px 5px;
+    }
+
+    .bookingDisplay .display2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 220px) {
+
+    .bookingDisplay .display1,
+    .bookingDisplay .display3 {
+        flex-direction: column;
+    }
+}
