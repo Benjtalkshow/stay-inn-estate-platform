@@ -636,7 +636,7 @@ body {
   border: 0;
   color: var(--white);
   background-color: var(--almostDarkBlue);
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .newsletter-input input::placeholder {
   color: var(--almostWhite);
@@ -1109,12 +1109,7 @@ body {
     width: 50%;
   }
 
-  /* .popular-location .popular-location-heading {
-    width: 80%;
-    padding: 20px 0;
-  } */
   .popular-location-container .location-image {
-    /* width: 150px; */
     height: 150px;
   }
 

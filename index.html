@@ -12,6 +12,7 @@
   <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
   <script src="/home/index.js" defer></script>
   <link rel="stylesheet" href="/home/style.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
   <title>Stay Inn</title>
 </head>
@@ -88,7 +89,7 @@
           </div>
           <div class="hero-sub-section-btn down">
             <!-- <button> -->
-            <input class="hero-first-input" type="date" name="" id="" style="background-color: #fff;">
+            <input class="hero-first-input" type="text" name="daterange" id="dateSearch" value="08/15/2023 - 08/15/2023" style="background-color: #fff;">
             <!-- Date <i class="fa-solid fa-chevron-down"></i> -->
             <!-- </button> -->
           </div>
@@ -282,6 +283,16 @@
   <!-- End of footer -->
   <!-- END OF SECTION 7 -->
   <script src="/home/scrollOnView.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script>
+  $(function() {
+    $('input[name="daterange"]').daterangepicker({
+      opens: 'left'
+    }, function(start, end, label) {
+    });
+  });
+    </script>
 </body>
-
 </html>
