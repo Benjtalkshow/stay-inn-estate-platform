@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#d1ac00" />
     <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/country-select-js/2.1.1/css/countrySelect.min.css">
     <title>Booking</title>
@@ -62,16 +63,16 @@
         <div class="booking-preview lazy-section">
             <div class="content">
                 <div class="img-container">
-                    <img src="/assets/images/booking-img.jpg" alt="hotel booking">
+                    <img src="/assets/images/booking-img.jpg" alt="hotel booking" class="hotelBookingImage" height="30%" width="30%">
                     <div class="txt-1">
-                        <h1>Exclusive Deluxe Hotel & Suite</h1>
-                        <p>Mo Sandie Crescent, Garki - Abuja</p>
+                        <h1 class="hotelName">Exclusive Deluxe Hotel & Suite</h1>
+                        <p class="hotelLocation">Mo Sandie Crescent, Garki - Abuja</p>
                     </div>
                 </div>
                 <div class="checkin-checkout">
                     <div class="checkin">
                         <div class="first-label">Check-In/Check-Out</div>
-                        <input type="date">
+                        <input type="text" name="daterange" id="dateSearch" value="01/01/2023 - 01/15/2023">
                     </div>
                     <div class="guest">
                         <div class="second-label">Guest(s)</div>
@@ -79,7 +80,7 @@
                     </div>
                 </div>
                 <div class="deluxe-1">
-                    <h1>Deluxe Room</h1>
+                    <h1 class="hotelName">Deluxe Room</h1>
                     <div class="price">
                         <h1>₦7,250</h1>
                         <p>Per Night</p>
@@ -87,7 +88,7 @@
                     </div>
                 </div>
                 <div class="deluxe-2">
-                    <h1>Deluxe Room</h1>
+                    <h1 class="hotelName">Deluxe Room</h1>
                     <div class="price">
                         <h1>₦41,250</h1>
                         <p>Per Night</p>
@@ -106,10 +107,57 @@
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/assets/assetscss/scrollOnView.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/country-select-js/2.1.1/js/countrySelect.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.9.42/libphonenumber-js.min.js"></script>
 
 <script>
+    //paynow button 
+    const payNow = document.querySelector(".pay-now")
+    payNow.addEventListener("click", ()=> {
+        localStorage.clear();
+        window.location.href = "/index.html"
+    })
+
+    // getting items from localStorage
+    const cardIndex = localStorage.getItem("cardIndex")
+    const hotelLocation = document.querySelector(".hotelLocation")
+    const hotelBookingImage =  document.querySelector(".hotelBookingImage")
+    const hotelNames = document.querySelectorAll(".hotelName")
+    document.querySelector("#dateSearch").value = localStorage.getItem("dateSearch")
+    fetch("/assets/json/hotels.json").then((res) => {
+    res.json().then((data) => {
+        hotelLocation.innerHTML = data[cardIndex].location;
+        hotelBookingImage.src = data[cardIndex].image;
+        hotelNames.forEach((e)=> {
+        e.innerHTML = data[cardIndex].heading;
+        })
+    });
+  });
+
+
+    // Date range picker jquery library
+    var startDate = null;
+    var endDate = null;
+
+    $(function () {
+      $('input[name="daterange"]').daterangepicker(
+        {
+          opens: "left",
+          // format: "DD-MM-YYYY"
+        },
+        function (start, end, label) {
+          // Store the selected dates
+          startDate = start.format("YYYY-MM-DD");
+          endDate = end.format("YYYY-MM-DD");
+        }
+      )
+    });
+
+
     $("#country").countrySelect({
         preferredCountries: ["ng", "us", "gb", "ca", "au"]
     });
@@ -144,47 +192,6 @@
             $("#message").text("Invalid phone number").css("color", "red");
         }
     });
-
-    // Function to handle the intersection of the observed elements
-class BootStrapAnimation {
-  #section;
-  constructor(section) {
-    this.#section = section;
-    this.#observeIntersection();
-  }
-
-  #handleIntersection(entries, observer) {
-    for (const entry of entries) {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    }
-  }
-
-  #observeIntersection() {
-    const observerOptions = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.3,
-    };
-
-    const observer = new IntersectionObserver(
-      this.#handleIntersection,
-      observerOptions
-    );
-    observer.observe(this.#section);
-  }
-}
-
-function animateOnIt() {
-  const sections = document.querySelectorAll(".lazy-section");
-  for (const section of sections) {
-    new BootStrapAnimation(section);
-  }
-}
-
-animateOnIt();
 </script>
 
 </html>
