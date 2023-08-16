@@ -1,298 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#d1ac00" />
-  <meta name="description" content="A booking platform, where your lodging experience
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#d1ac00" />
+    <meta
+      name="description"
+      content="A booking platform, where your lodging experience
   becomes easier and more enjoyable. With our platform, you can
-  discover. The perfect accommodation for your stay within Nigeria." />
-  <meta name="title" content="Stay-Inn" />
-  <script src="https://kit.fontawesome.com/b55a4a1c1f.js" crossorigin="anonymous"></script>
-  <script src="/home/index.js" defer></script>
-  <link rel="stylesheet" href="/home/style.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-  <title>Stay Inn</title>
-</head>
+  discover. The perfect accommodation for your stay within Nigeria."
+    />
+    <meta name="title" content="Stay-Inn" />
+    <script
+      src="https://kit.fontawesome.com/b55a4a1c1f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/home/index.js" defer></script>
+    <link rel="stylesheet" href="/home/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <title>Stay Inn</title>
+  </head>
 
-<body>
-  <!-- SECTION 1 -->
-  <!-- Navbar ul, li, a, butons, hero section and icons -->
-  <section class="top_dashboard lazy-section">
-    <nav class="navbar">
-      <div class="logo"><a href="index.html"><img src="/assets/images/logo.png" alt="logo" /></a></div>
-      <div class="link_container">
-        <ul class="navbar_ul">
-          <li class="linked_list"><a href="index.html">Home</a></li>
-          <li class="linked_list"><a href="/booking/booking.html">Bookings</a></li>
-          <li class="linked_list"><a href="/support/support.html">Support</a></li>
-        </ul>
-        <div class="navbar_btn">
-          <a href="/signin/signin.html"><button class="signin_btn">Sign in</button></a>
-          <a href="/register/register.html"><button class="register_btn">Register</button></a>
+  <body>
+    <!-- SECTION 1 -->
+    <!-- Navbar ul, li, a, butons, hero section and icons -->
+    <section class="top_dashboard lazy-section">
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="/assets/images/logo.png" alt="logo"
+          /></a>
         </div>
-      </div>
-      <div class="hamburger">
-        <i class="fa-solid fa-bars xbar"></i>
-        <i class="fa-solid fa-xmark xmark"></i>
-      </div>
-    </nav>
-    <!-- Hero section write up and sub-section -->
-    <section class="hero-writeup-container">
-      <div class="hero-writeup">
-        <h1 class="writing-effect">
-          <!-- Find the Best <br />
+        <div class="link_container">
+          <ul class="navbar_ul">
+            <li class="linked_list"><a href="index.html">Home</a></li>
+            <li class="linked_list">
+              <a href="/booking/booking.html">Bookings</a>
+            </li>
+            <li class="linked_list">
+              <a href="/support/support.html">Support</a>
+            </li>
+          </ul>
+          <div class="navbar_btn">
+            <a href="/signin/signin.html"
+              ><button class="signin_btn">Sign in</button></a
+            >
+            <a href="/register/register.html"
+              ><button class="register_btn">Register</button></a
+            >
+          </div>
+        </div>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars xbar"></i>
+          <i class="fa-solid fa-xmark xmark"></i>
+        </div>
+      </nav>
+      <!-- Hero section write up and sub-section -->
+      <section class="hero-writeup-container">
+        <div class="hero-writeup">
+          <h1 class="writing-effect">
+            <!-- Find the Best <br />
           Hotels in your city -->
-        </h1>
-        <h1 class="writing-effetz"></h1>
-        <article>
-          Welcome to our hotel booking platform, where your lodging experience
-          <br />
-          becomes easier and more enjoyable. With our platform, you can
-          discover <br />
-          the perfect accommodation for your stay within Nigeria.
-        </article>
+          </h1>
+          <h1 class="writing-effetz"></h1>
+          <article>
+            Welcome to our hotel booking platform, where your lodging experience
+            <br />
+            becomes easier and more enjoyable. With our platform, you can
+            discover <br />
+            the perfect accommodation for your stay within Nigeria.
+          </article>
+        </div>
+        <div class="hero-sub-section">
+          <div>
+            <div class="hero-sub-section-btn top">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Location</p>
+            </div>
+            <div class="hero-sub-section-btn down">
+              <input
+                class="hero-first-input searchHotel"
+                type="text"
+                placeholder="Enter Location"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="hero-sub-section-btn top">
+              <i class="fa-regular fa-user"></i>
+              <p>Guest</p>
+            </div>
+            <div class="hero-sub-section-btn down">
+              <button>
+                <select
+                  class="hero-first-input searchHotel"
+                  name=""
+                  id=""
+                  style="
+                    border: 0;
+                    outline-width: 0;
+                    outline-color: 0;
+                    width: 80%;
+                  "
+                >
+                  <option value="Person(s)">Person(s)</option>
+                  <option value="2 Adults, 1 room">2 Adults, 0 Children - 1 room</option>
+                  <option value="1 Adults, 1 room">1 Adults, 0 Children - 1 room</option>
+                  <option value="2 Adults, 1 child, 1 room">2 Adults, 1 Children - 1 room</option>
+                  <option value="4 Adults, 1 room">4 Adults, 0 Children - 1 room</option>
+                  <option value="2 Adults, 2 rooms, 2 Children">2 Adults, 2 rooms, 2 Children</option>
+                </select>
+                <!-- Person(s) <i class="fa-solid fa-chevron-down"></i> -->
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class="hero-sub-section-btn top">
+              <i class="fa-regular fa-calendar-days"></i>Check-In/Out
+            </div>
+            <div class="hero-sub-section-btn down">
+              <!-- <button> -->
+              <input
+                class="hero-first-input"
+                type="text"
+                name="daterange"
+                id="dateSearch"
+                value="01/01/2023 - 01/15/2023"
+                style="background-color: #fff"
+              />
+              <!-- Date <i class="fa-solid fa-chevron-down"></i> -->
+              <!-- </button> -->
+            </div>
+          </div>
+          <div>
+            <div class="hero-sub-section-btn top">
+              <p style="color: transparent">lorem</p>
+            </div>
+            <div class="hero-sub-section-btn down">
+              <button class="searchbar" onclick="setLocalToStorage()">
+                Search <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- END OF SECTION 1 -->
+
+    <!-- SECTION 2 -->
+    <!-- Explore exciting rooms deals section -->
+    <section class="explore lazy-section">
+      <div class="explore-sub-section">
+        <h1>Explore Exciting Room Deals</h1>
+        <div class="image-container">
+          <div class="explore-images exp-img-1">
+            <img
+              src="/assets/images/Hotel_Image_1.jpg"
+              alt="Hotel_Image_1"
+              class="big-img"
+              height="365px"
+              width="550px"
+              draggable="true"
+            />
+          </div>
+          <div class="child-images">
+            <div class="explore-images exp-img-2">
+              <img
+                src="/assets/images/Hotel_Image_2.jpg"
+                alt="Hotel_Image_2"
+                class="grid-img"
+              />
+            </div>
+            <div class="explore-images exp-img-3">
+              <img
+                src="/assets/images/Hotel_Image_3.jpg"
+                alt="Hotel_Image_3"
+                class="grid-img"
+              />
+            </div>
+            <div class="explore-images exp-img-4">
+              <img
+                src="/assets/images/Hotel_Image_2.jpg"
+                alt="Hotel_Image_4"
+                class="grid-img"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="hero-sub-section">
-        <div>
-          <div class="hero-sub-section-btn top">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Location</p>
-          </div>
-          <div class="hero-sub-section-btn down">
-            <input class="hero-first-input" type="text" placeholder="Enter Location" />
-          </div>
+      <div class="explore-sub-section explore-text">
+        <h1>Savannah Luxury Hotel</h1>
+        <div class="ratings">
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
+          <i class="fa-sharp fa-solid fa-star"></i>
         </div>
-        <div>
-          <div class="hero-sub-section-btn top">
-            <i class="fa-regular fa-user"></i>
-            <p>Guest</p>
-          </div>
-          <div class="hero-sub-section-btn down">
-            <button>
-              <select class="hero-first-input"  name="" id="" style="border: 0; outline-width: 0; outline-color: 0; width: 80%;">
-                <option value="Person(s)">Person(s)</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-              </select>
-              <!-- Person(s) <i class="fa-solid fa-chevron-down"></i> -->
-            </button>
-          </div>
-        </div>
-        <div>
-          <div class="hero-sub-section-btn top">
-            <i class="fa-regular fa-calendar-days"></i>Check-In/Out
-          </div>
-          <div class="hero-sub-section-btn down">
-            <!-- <button> -->
-            <input class="hero-first-input" type="text" name="daterange" id="dateSearch" value="08/15/2023 - 08/15/2023" style="background-color: #fff;">
-            <!-- Date <i class="fa-solid fa-chevron-down"></i> -->
-            <!-- </button> -->
-          </div>
-        </div>
-        <div>
-          <div class="hero-sub-section-btn top">
-            <p style="color: transparent;">lorem</p>
-          </div>
-          <div class="hero-sub-section-btn down">
-            <button class="searchbar">
-              Search <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </div>
-        </div>
+        <p>Musa Abba Close, Wuse 2 Abuja</p>
+        <div class="address-bar"></div>
+        <article>
+          Each hotel has been meticulously reviewed and awarded high ratings
+          <br />
+          by discerning travellers like you. <br /><br />
+          So, let us introduce you to some of the finest establishments that
+          have <br />
+          consistently delivered exceptional service, luxury amenities, and a
+          <br />
+          remarkable overall experience.
+        </article>
+        <button>Explore More</button>
       </div>
     </section>
-  </section>
-  <!-- END OF SECTION 1 -->
+    <!-- END OF SECTION 2 -->
 
-  <!-- SECTION 2 -->
-  <!-- Explore exciting rooms deals section -->
-  <section class="explore lazy-section">
-    <div class="explore-sub-section">
-      <h1>Explore Exciting Room Deals</h1>
-      <div class="image-container">
-        <div class="explore-images exp-img-1"><img src="/assets/images/Hotel_Image_1.jpg" alt="Hotel_Image_1" class="big-img" height="365px" width="550px" draggable="true"></div>
-        <div class="child-images">
-          <div class="explore-images exp-img-2"><img src="/assets/images/Hotel_Image_2.jpg" alt="Hotel_Image_2" class="grid-img"></div>
-          <div class="explore-images exp-img-3"><img src="/assets/images/Hotel_Image_3.jpg" alt="Hotel_Image_3" class="grid-img"></div>
-          <div class="explore-images exp-img-4"><img src="/assets/images/Hotel_Image_2.jpg" alt="Hotel_Image_4" class="grid-img"></div>
+    <!-- SECTION 3 -->
+    <!-- Popular location section -->
+    <section class="popular-location lazy-section">
+      <div style="width: 90%">
+        <div class="popular-location-heading">
+          <h1>Popular Locations</h1>
+        </div>
+        <div class="popular-location-container">
+          <div class="location-image location-1">
+            <h1>Abuja</h1>
+          </div>
+          <div class="location-image location-2">
+            <h1>Lagos</h1>
+          </div>
+          <div class="location-image location-3">
+            <h1>Port Harcourt</h1>
+          </div>
+          <div class="location-image location-4">
+            <h1>Owerri</h1>
+          </div>
+          <div class="location-image location-5">
+            <h1>Kano</h1>
+          </div>
+          <div class="location-image location-6">
+            <h1>Calabar</h1>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="explore-sub-section explore-text">
-      <h1>Savannah Luxury Hotel</h1>
-      <div class="ratings">
-        <i class="fa-sharp fa-solid fa-star"></i>
-        <i class="fa-sharp fa-solid fa-star"></i>
-        <i class="fa-sharp fa-solid fa-star"></i>
-        <i class="fa-sharp fa-solid fa-star"></i>
-        <i class="fa-sharp fa-solid fa-star"></i>
+      <!-- "See More" button -->
+      <button>See More</button>
+    </section>
+    <!-- END OF SECTION 3 -->
+
+    <!-- SECTION 4 -->
+    <!-- Discount section -->
+    <section class="discount-section lazy-section">
+      <div class="discount-image">
+        <img
+          src="/assets/images/DiscountSection.jpg"
+          alt="DiscountSection image"
+        />
       </div>
-      <p>Musa Abba Close, Wuse 2 Abuja</p>
-      <div class="address-bar"></div>
-      <article>Each hotel has been meticulously reviewed and awarded high ratings <br>
-        by discerning travellers like you. <br><br>
-        So, let us introduce you to some of the finest establishments that have <br>
-        consistently delivered exceptional service, luxury amenities, and a <br>
-        remarkable overall experience.</article>
-      <button>Explore More</button>
-    </div>
-  </section>
-  <!-- END OF SECTION 2 -->
-
-  <!-- SECTION 3 -->
-  <!-- Popular location section -->
-  <section class="popular-location lazy-section">
-  
-<div style="width: 90%;">
-  <div class="popular-location-heading">
-    <h1>Popular Locations</h1>
-  </div>
-  <div class="popular-location-container">
-    <div class="location-image location-1">
-      <h1>Abuja</h1>
-    </div>
-    <div class="location-image location-2">
-      <h1>Lagos</h1>
-    </div>
-    <div class="location-image location-3">
-      <h1>Port Harcourt</h1>
-    </div>
-    <div class="location-image location-4">
-      <h1>Owerri</h1>
-    </div>
-    <div class="location-image location-5">
-      <h1>Kano</h1>
-    </div>
-    <div class="location-image location-6">
-      <h1>Calabar</h1>
-    </div>
-  </div>
-</div> 
-    <!-- "See More" button -->
-    <button>See More</button>
-  </section>
-  <!-- END OF SECTION 3 -->
-
-  <!-- SECTION 4 -->
-  <!-- Discount section -->
-  <section class="discount-section lazy-section">
-    <div class="discount-image">
-      <img src="/assets/images/DiscountSection.jpg" alt="DiscountSection image">
-    </div>
-    <div class="discount-writeup">
-      <h1>Stay Longer, Save More</h1>
-      <article>
-        Elegant and comfortable rooms available at affordable rates. <br><br>
-        These rooms have queen sized beds, private bathrooms with a hairdryer. <br>
-        They also have flat screen TVs, safety deposit boxes, free <br>
-        wifi and free breakfast through out your stay.
-      </article>
-      <div class="discount-label">
-        <div>
-          <p>Get</p>
-          <p><span style="font-size: 1.5rem; font-weight: 700; padding-right: 5px;">15%</span>Discount</p>
-          <p>Stay 2 nights or more</p>
+      <div class="discount-writeup">
+        <h1>Stay Longer, Save More</h1>
+        <article>
+          Elegant and comfortable rooms available at affordable rates.
+          <br /><br />
+          These rooms have queen sized beds, private bathrooms with a hairdryer.
+          <br />
+          They also have flat screen TVs, safety deposit boxes, free <br />
+          wifi and free breakfast through out your stay.
+        </article>
+        <div class="discount-label">
+          <div>
+            <p>Get</p>
+            <p>
+              <span
+                style="font-size: 1.5rem; font-weight: 700; padding-right: 5px"
+                >15%</span
+              >Discount
+            </p>
+            <p>Stay 2 nights or more</p>
+          </div>
+          <div class="vertical-line"></div>
+          <div>
+            <p>Get</p>
+            <p>
+              <span
+                style="font-size: 1.5rem; font-weight: 700; padding-right: 5px"
+                >25%</span
+              >Discount
+            </p>
+            <p>Stay 4 nights or more</p>
+          </div>
         </div>
-        <div class="vertical-line"></div>
-        <div>
-          <p>Get</p>
-          <p><span style="font-size: 1.5rem; font-weight: 700; padding-right: 5px;">25%</span>Discount</p>
-          <p>Stay 4 nights or more</p>
+        <p>
+          <span style="padding: 0 5px 5px 0; color: red; font-weight: 700"
+            >*</span
+          >Offer available until October 31st, 2023
+        </p>
+      </div>
+    </section>
+    <!-- END OF SECTION 4 -->
+
+    <!-- SECTION 5 -->
+    <!-- Discover more section -->
+    <section class="discover-section lazy-section">
+      <div class="discover-text">
+        <h1>
+          Discover More Top Rated <br />
+          Hotels in Nigeria
+        </h1>
+        <div class="underline-bar"></div>
+        <article>
+          These top rated hotels have been chosen for their <br />
+          exceptional quality, impeccable service, and extraordinary <br />
+          attention to detail. <br /><br />
+          Whether you're seeking a romantic getaway, a family- <br />
+          friendly retreat, or a luxurious business stay, you can trust <br />
+          that these establishments will exceed your expectations.
+        </article>
+        <button>Discover more</button>
+      </div>
+      <div class="discover-image">
+        <img
+          class="image-1"
+          src="/assets/images/about-image_2.jpg"
+          alt="about-image_1"
+        />
+        <img
+          class="image-2"
+          src="/assets/images/about-image_1.jpg"
+          alt="about-image_2"
+        />
+      </div>
+    </section>
+    <!-- END OF SECTION 5 -->
+
+    <!-- SECTION 6 -->
+    <!-- Newsletter section -->
+    <section class="newsletter lazy-section">
+      <div class="newsletter-text">
+        <h1>Newsletter</h1>
+        <p>Stay Up To Date</p>
+      </div>
+      <div class="newsletter-input">
+        <input type="text" placeholder="Your Email..." />
+        <button class="send-icon" type="submit">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </section>
+    <!-- END OF SECTION 6 -->
+
+    <!-- SECTION 7 -->
+    <!-- This footer will be designed by iklyma -->
+    <footer class="footer-section lazy-section">
+      <div class="sub-footer">
+        <h1>COMPANY</h1>
+        <a href="#0">About Us</a>
+        <a href="#0">Legal Information</a>
+        <a href="#0">Contact Us</a>
+        <a href="#0">Blogs</a>
+      </div>
+      <div class="sub-footer">
+        <h1>HELP CENTRE</h1>
+        <a href="#0">Find a Hotel</a>
+        <a href="#0">How to Join Us</a>
+        <a href="#0">Why Us?</a>
+        <a href="#0">FAQs</a>
+        <a href="#0">Booking Guides</a>
+      </div>
+      <div class="sub-footer">
+        <h1>CONTACT INFO</h1>
+        <a href="#0">Phone: +234 123 456 7890</a>
+        <a href="#0">Email: stay@inn.com</a>
+        <div class="social">
+          <a href="#0"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#0"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#0"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#0"><i class="fa-brands fa-linkedin"></i></a>
         </div>
       </div>
-      <p><span style="padding: 0 5px 5px 0; color: red; font-weight: 700;">*</span>Offer available until October 31st,
-        2023</p>
-    </div>
-  </section>
-  <!-- END OF SECTION 4 -->
+    </footer>
+    <!-- End of footer -->
+    <!-- END OF SECTION 7 -->
+    <script src="/home/scrollOnView.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script>
+  var startDate = null;
+  var endDate = null;
 
-  <!-- SECTION 5 -->
-  <!-- Discover more section -->
-  <section class="discover-section lazy-section">
-    <div class="discover-text">
-      <h1>Discover More Top Rated <br> Hotels in Nigeria</h1>
-      <div class="underline-bar"></div>
-      <article>
-        These top rated hotels have been chosen for their <br>
-        exceptional quality, impeccable service, and extraordinary <br>
-        attention to detail. <br><br>
-        Whether you're seeking a romantic getaway, a family- <br>
-        friendly retreat, or a luxurious business stay, you can trust <br>
-        that these establishments will exceed your expectations.
-      </article>
-      <button>Discover more</button>
-    </div>
-    <div class="discover-image">
-      <img class="image-1" src="/assets/images/about-image_2.jpg" alt="about-image_1">
-      <img class="image-2" src="/assets/images/about-image_1.jpg" alt="about-image_2">
-    </div>
-  </section>
-  <!-- END OF SECTION 5 -->
+  $(function () {
+    $('input[name="daterange"]').daterangepicker(
+      {
+        opens: "left",
+        // format: "DD-MM-YYYY"
+      },
+      function (start, end, label) {
+        // Store the selected dates
+        startDate = start.format("YYYY-MM-DD");
+        endDate = end.format("YYYY-MM-DD");
+      }
+    )});
 
-  <!-- SECTION 6 -->
-  <!-- Newsletter section -->
-  <section class="newsletter lazy-section">
-    <div class="newsletter-text">
-      <h1>Newsletter</h1>
-      <p>Stay Up To Date</p>
-    </div>
-    <div class="newsletter-input">
-      <input type="text" placeholder="Your Email...">
-      <button class="send-icon" type="submit">
-        <i class="fas fa-paper-plane"></i>
-      </button>
-    </div>
-  </section>
-  <!-- END OF SECTION 6 -->
+  // Handle the search button click event
+  const searchButton = document.querySelector(".searchbar");
+    searchButton.addEventListener("click", function () {
+      const hero_inputs = document.querySelectorAll(".searchHotel");
+      const firstInputValue = hero_inputs[0].value;
+      const secondInputValue = hero_inputs[1].value;
 
-  <!-- SECTION 7 -->
-  <!-- This footer will be designed by iklyma -->
-  <footer class="footer-section lazy-section">
-    <div class="sub-footer">
-      <h1>COMPANY</h1>
-      <a href="#0">About Us</a>
-      <a href="#0">Legal Information</a>
-      <a href="#0">Contact Us</a>
-      <a href="#0">Blogs</a>
-    </div>
-    <div class="sub-footer">
-      <h1>HELP CENTRE</h1>
-      <a href="#0">Find a Hotel</a>
-      <a href="#0">How to Join Us</a>
-      <a href="#0">Why Us?</a>
-      <a href="#0">FAQs</a>
-      <a href="#0">Booking Guides</a>
-    </div>
-    <div class="sub-footer">
-      <h1>CONTACT INFO</h1>
-      <a href="#0">Phone: +234 123 456 7890</a>
-      <a href="#0">Email: stay@inn.com</a>
-      <div class="social">
-        <a href="#0"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="#0"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#0"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#0"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
-    </div>
-  </footer>
-  <!-- End of footer -->
-  <!-- END OF SECTION 7 -->
-  <script src="/home/scrollOnView.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-<script>
-  $(function() {
-    $('input[name="daterange"]').daterangepicker({
-      opens: 'left'
-    }, function(start, end, label) {
+      function inputReset() {
+        hero_inputs[0].value = "";
+        hero_inputs[1].value = "Person(s)";
+      }
+
+      if (startDate && endDate && typeof firstInputValue === "string") {
+        localStorage.setItem("location", firstInputValue);
+        localStorage.setItem("persons", secondInputValue);
+        localStorage.setItem("startDate", startDate);
+        localStorage.setItem("endDate", endDate);
+
+        // Redirect to the next page
+        window.location.href = "listhotels/hotels.html";
+        inputReset();
+      } else {
+        window.alert(
+          "Invalid input values. The first input should be text, the second input should be a number, and the third input should be a valid date."
+        );
+        inputReset();
+      }
     });
-  });
-    </script>
-</body>
+</script>
+  </body>
 </html>
