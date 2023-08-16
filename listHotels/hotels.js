@@ -114,7 +114,12 @@ function getFromLocalStorage() {
   }
   
   const diffDays = datediff(topDate, downDate);
-  const numberOfNihghts = document.querySelector(".No-of-nights").innerHTML = `${diffDays} NIGHTS`
+  const numberOfNihghts = document.querySelector(".No-of-nights").innerHTML = `${diffDays} NIGHTS`;
+  localStorage.setItem("diffDays", diffDays)
+  window.onbeforeunload = function() {
+localStorage.removeItem("location")
+  }
   
 }
 getFromLocalStorage();
+

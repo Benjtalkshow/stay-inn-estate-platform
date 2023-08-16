@@ -136,7 +136,7 @@ form .terms_privacy a {
   border-bottom: 1px dashed var(--white);
 }
 
-.checkin-checkout .checkin input[type="date"],
+.checkin-checkout .checkin input[type="text"],
 .checkin-checkout .guest button {
   border-radius: 8px;
   outline-width: 0;

@@ -38,7 +38,7 @@
             <div class="display1">
                 <div class="sub-display1">
                     <p class="destination">DESTINATION</p>
-                    <input type="search" placeholder="Search Here..." class="address search" onkeyup="search()">
+                    <input type="search" placeholder="Search Here..." class="address search">
                 </div>
                 <!-- <div class="sub-display2">
                     <i class="fa-solid fa-xmark"></i>
@@ -63,7 +63,7 @@
                     <h4 class="people">2 Adults, 0 Children - 1 room</h6>
                 </div>
                 <div class="sub-display7">
-                    <button class="searchbar">
+                    <button class="searchbar" onclick="search()">
                         Search <i class="fa-solid fa-magnifying-glass"></i>
                       </button>
                 </div>
@@ -72,7 +72,7 @@
     </section>
 
     <!-- grid container -->
-    <section class="hotel-container">
+    <section class="hotel-container lazy-section">
         <!-- card container -->
         <div class="hotels">
         </div>
