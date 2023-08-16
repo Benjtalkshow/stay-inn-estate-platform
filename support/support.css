@@ -28,17 +28,17 @@ body {
 
 /* lazy section css */
 .lazy-section {
-    transform: translateY(80px); 
-    opacity: 0; 
-  }
-  
-  .lazy-section.visible {
-    opacity: 1; 
-    transform: translateY(0px); 
+    transform: translateY(80px);
+    opacity: 0;
+}
+
+.lazy-section.visible {
+    opacity: 1;
+    transform: translateY(0px);
     transition-property: opacity, transform;
     transition-duration: 1s, 2s;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
+}
 
 /* SECTION 1 */
 /* ########## NAV BAR STYLING ########## */
@@ -104,34 +104,38 @@ body {
     flex-wrap: wrap;
 }
 
-.navbar_btn .signin_btn ,
-.navbar_btn .register_btn  {
-  padding: 8px 15px;
-  border: 1px solid var(--almostDarkBlue);
-  border-radius: 8px;
-  transition: ease-in .3s;
-  cursor: pointer;
-  outline-width: 0;
-  font-size: 1.19em;
-}
-.navbar_btn .signin_btn {
-  background-color: transparent;
-  border: 1px solid var(--almostDarkBlue);
-  color: var(--almostDarkBlue);
-}
-.navbar_btn .signin_btn:hover {
-  background-color: var(--almostYellow);
-  border: 1px solid var(--almostYellow);
-  color: var(--white);
-}
+.navbar_btn .signin_btn,
 .navbar_btn .register_btn {
-  background-color: var(--almostDarkBlue);
-  color: var(--white);
+    padding: 8px 15px;
+    border: 1px solid var(--almostDarkBlue);
+    border-radius: 8px;
+    transition: ease-in .3s;
+    cursor: pointer;
+    outline-width: 0;
+    font-size: 1.19em;
 }
+
+.navbar_btn .signin_btn {
+    background-color: transparent;
+    border: 1px solid var(--almostDarkBlue);
+    color: var(--almostDarkBlue);
+}
+
+.navbar_btn .signin_btn:hover {
+    background-color: var(--almostYellow);
+    border: 1px solid var(--almostYellow);
+    color: var(--white);
+}
+
+.navbar_btn .register_btn {
+    background-color: var(--almostDarkBlue);
+    color: var(--white);
+}
+
 .navbar_btn .register_btn:hover {
-  background-color: transparent;
-  border: 1px solid var(--almostYellow);
-  color: var(--almostDarkBlue);
+    background-color: transparent;
+    border: 1px solid var(--almostYellow);
+    color: var(--almostDarkBlue);
 }
 
 
@@ -160,7 +164,7 @@ body {
     border-bottom: 1px solid var(--almostWhite);
 }
 
-  
+
 /* SECTION 2 */
 .support {
     width: 100%;
@@ -169,20 +173,25 @@ body {
     justify-content: center;
     /* gap: 10em; */
 }
+
 .support .text-container {
- padding-right: 250px;
+    padding-right: 250px;
 }
+
 .support .text-container h1 {
     padding-bottom: 20px;
 }
+
 .support .text-container p {
     color: var(--grey);
     padding-bottom: 20px;
 }
+
 .support .text-container a {
     text-decoration: none;
     color: var(--grey);
 }
+
 .text-container a i {
     padding-right: 10px;
 }
@@ -202,53 +211,63 @@ form {
     flex-direction: column;
     padding: 0 120px;
 }
+
 form h1 {
     font-size: 1.2em;
 }
+
 form p {
     font-size: .8em;
 }
+
 form .input-parent-container {
     display: flex;
     margin: 20px 0;
     gap: 40px;
     justify-content: center;
 }
+
 form .input-parent-container .divider {
     width: 50%;
 }
+
 form .input-container {
-  align-items: center;
-  width: 100%;
-  border: 1px solid var(--almostDarkBlue);
-  border-radius: 8px;
-  display: flex;
-  padding: 0 10px;
-  margin: 20px 0;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--almostDarkBlue);
+    border-radius: 8px;
+    display: flex;
+    padding: 0 10px;
+    margin: 20px 0;
 }
+
 form .input-container i {
-  display: inline-block;
-  padding-right: 10px;
+    display: inline-block;
+    padding-right: 10px;
 }
+
 form .input-container input {
-  width: 100%;
-  padding: 10px 0;
-  outline-width: 0;
-  border: 0;
-  background-color: transparent;
+    width: 100%;
+    padding: 10px 0;
+    outline-width: 0;
+    border: 0;
+    background-color: transparent;
 }
+
 form .message {
     outline-width: 0;
     border: 1px solid var(--almostDarkBlue);
     border-radius: 8px;
     resize: none;
 }
+
 form .btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px 0;
 }
+
 form .btn-container button {
     padding: 10px;
     width: 30%;
@@ -260,16 +279,18 @@ form .btn-container button {
     cursor: pointer;
     transition: ease-in .3s;
 }
+
 form .btn-container button:hover {
     background-color: transparent;
     color: var(--almostDarkBlue);
 }
 
 @media screen and (max-width: 1264px) {
-   .support .text-container {
-    padding-right: 20px;
-   } 
+    .support .text-container {
+        padding-right: 20px;
+    }
 }
+
 @media screen and (max-width: 1153px) {
 
     /* ########## MEDIA QUERY FOR NAV BAR 1153px [SECTION 1] ########## */
@@ -308,36 +329,38 @@ form .btn-container button:hover {
         margin: 0;
         gap: 40px;
     }
-.navbar_ul li a {
-    color: var(--white);
-}
-.navbar_btn .signin_btn a,
-.navbar_btn .register_btn a {
-    padding: 8px 25px;
-    border: 2px solid var(--almostDarkBlue);
-    border-radius: 8px;
-    transition: ease-in .3s;
-}
 
-.navbar_btn .signin_btn a:hover {
-    background-color: var(--almostDarkBlue);
-    color: var(--white);
-}
+    .navbar_ul li a {
+        color: var(--white);
+    }
 
-.navbar_btn .register_btn a {
-    background-color: var(--almostDarkBlue);
-    color: var(--white);
-}
+    .navbar_btn .signin_btn a,
+    .navbar_btn .register_btn a {
+        padding: 8px 25px;
+        border: 2px solid var(--almostDarkBlue);
+        border-radius: 8px;
+        transition: ease-in .3s;
+    }
 
-.navbar_btn .signin_btn a {
-    border: 2px solid var(--white);
-    color: var(--white);
-}
+    .navbar_btn .signin_btn a:hover {
+        background-color: var(--almostDarkBlue);
+        color: var(--white);
+    }
 
-.navbar_btn .register_btn a:hover {
-    border: 2px solid var(--white);
-    color: var(--white)
-}
+    .navbar_btn .register_btn a {
+        background-color: var(--almostDarkBlue);
+        color: var(--white);
+    }
+
+    .navbar_btn .signin_btn a {
+        border: 2px solid var(--white);
+        color: var(--white);
+    }
+
+    .navbar_btn .register_btn a:hover {
+        border: 2px solid var(--white);
+        color: var(--white)
+    }
 
     .navbar .link_container .navbar_btn {
         flex-direction: column;
@@ -364,15 +387,17 @@ form .btn-container button:hover {
         display: block;
         padding-left: 20px;
     }
-.support {
-    flex-direction: column;
-    gap: 5em;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-form {
-    padding: 0 25px;
-}
+
+    .support {
+        flex-direction: column;
+        gap: 5em;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    form {
+        padding: 0 25px;
+    }
 
     /* ########## END OF MEDIA QUERY  FOR MOBILE VIEW NAVBAR 961px  1153px ########## */
 }

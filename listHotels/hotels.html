@@ -51,11 +51,11 @@
                 </div>
                 <div class="sub-display4">
                     <p class="No-of-nights">0 NIGHTS</p>
-                </div> 
+                </div>
                 <div class="sub-display5">
                     <p class="checkOut-title">CHECK-OUT:</p>
                     <h4 class="checkOut">dd/mm</h6>
-                </div> 
+                </div>
             </div>
             <div class="display3">
                 <div class="sub-display6">
@@ -65,7 +65,7 @@
                 <div class="sub-display7">
                     <button class="searchbar" onclick="search()">
                         Search <i class="fa-solid fa-magnifying-glass"></i>
-                      </button>
+                    </button>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@
         <!-- card container -->
         <div class="hotels">
         </div>
-<h1 class="search-warning"></h1>
+        <h1 class="search-warning"></h1>
     </section>
     <section class="newsletter lazy-section">
         <div class="newsletter-text">
@@ -129,9 +129,9 @@
         const xmark = document.querySelector(".xmark");
         const navBar = document.querySelector(".navbar");
         const linkContainer = document.querySelector(".link_container");
-    const logo = document.querySelector('.logo_png')
-    
-    
+        const logo = document.querySelector('.logo_png')
+
+
         // javascript code for hamburger menu
         bar.addEventListener("click", (e) => {
             e.preventDefault();
@@ -142,7 +142,7 @@
             xmark.style.color = "#D1AC00";
             logo.src = "/assets/images/logo.png"
         });
-    
+
         xmark.addEventListener("click", (e) => {
             e.preventDefault();
             navBar.classList.remove("display");
@@ -151,11 +151,11 @@
             xmark.style.display = "none";
             logo.src = "/assets/images/logo2.png"
         });
-    
+
         // Navbar responsiveness with the help of javascript method (matchMedia())
         const mediaQueryActive = window.matchMedia('(min-width: 962px)');
         const displayHamburger = window.matchMedia('(max-width:961px)');
-    
+
         const checkMediaQueryActive = (mq) => {
             if (mq.matches) {
                 if (linkContainer.classList.contains('active')) {
@@ -167,7 +167,7 @@
         };
         mediaQueryActive.addEventListener('change', checkMediaQueryActive);
         checkMediaQueryActive(mediaQueryActive);
-    
+
         const checkDisplayHamburger = (mqh) => {
             if (mqh.matches) {
                 bar.style.display = "inline-block";

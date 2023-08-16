@@ -29,17 +29,18 @@ body {
 /* SIGN UP SECTION */
 /* ########## SIGN UP STYLING SECTION ########## */
 .lazy-section {
-  transform: translateY(80px); 
-  opacity: 0; 
+  transform: translateY(80px);
+  opacity: 0;
 }
 
 .lazy-section.visible {
-  opacity: 1; 
-  transform: translateY(0px); 
+  opacity: 1;
+  transform: translateY(0px);
   transition-property: opacity, transform;
   transition-duration: 1s, 2s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .signup {
   width: 100%;
   display: flex;
@@ -47,15 +48,18 @@ body {
   height: 100vh;
   position: relative;
 }
+
 .theform,
 .signup-bg-image {
   width: 50%;
 }
+
 .theform {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .signup form {
   width: 80%;
 }
@@ -64,6 +68,7 @@ body {
   padding-top: var(--margin-of-40px);
   font-weight: 1.3em;
 }
+
 .signup form .google-button {
   width: 100%;
   border: 1px solid var(--almostDarkBlue);
@@ -77,14 +82,17 @@ body {
   align-items: center;
   margin: 10px 0;
 }
+
 form .google-button p {
   color: var(--almostDarkBlue);
   font-size: 1.2em;
   font-weight: bold;
 }
+
 form .google-button img {
   width: 35px;
 }
+
 form .hr-demarcation {
   width: 100%;
   display: flex;
@@ -93,9 +101,11 @@ form .hr-demarcation {
   gap: 20px;
   margin: 20px 0 10px 0;
 }
+
 form .hr-demarcation p {
   display: inline-block;
 }
+
 form .hr-demarcation .left-hr,
 form .hr-demarcation .right-hr {
   width: 50%;
@@ -111,10 +121,12 @@ form .input-container {
   padding: 0 10px;
   margin: 10px 0;
 }
+
 form .input-container i {
   display: inline-block;
   padding-right: 10px;
 }
+
 form .input-container input {
   width: 100%;
   padding: 10px 0;
@@ -122,6 +134,7 @@ form .input-container input {
   border: 0;
   background-color: transparent;
 }
+
 form .register-btn {
   width: 100%;
   border: 1px solid var(--almostDarkBlue);
@@ -140,6 +153,7 @@ form .register-btn:hover {
   background-color: transparent;
   color: var(--almostDarkBlue);
 }
+
 form .terms_privacy {
   display: flex;
   margin-bottom: 20px;
@@ -147,19 +161,24 @@ form .terms_privacy {
   align-items: center;
   gap: 10px;
 }
+
 form .terms_privacy input[type="checkbox"] {
   transform: scale(1.5);
 }
+
 form .terms_privacy a {
   color: var(--almostYellow);
 }
+
 form .login-link {
   text-decoration: none;
   color: var(--almostYellow);
 }
+
 .signup .signup-bg-image {
   height: 100%;
 }
+
 .signup .signup-bg-image img {
   width: 100%;
   height: 100%;
@@ -172,18 +191,21 @@ form .login-link {
     overflow: scroll;
   }
 }
+
 /* MEDIA QUERY FOR 720PX */
 @media screen and (max-width: 720px) {
-    .theform {
-        width: 100%;
-        padding-top: 50px;
-    }
-    .signup {
-        flex-direction: column;
-        /* overflow: scroll; */
-    }
-.signup-bg-image {
+  .theform {
+    width: 100%;
+    padding-top: 50px;
+  }
+
+  .signup {
+    flex-direction: column;
+    /* overflow: scroll; */
+  }
+
+  .signup-bg-image {
     display: none;
-}  
-  
+  }
+
 }

@@ -63,7 +63,8 @@
         <div class="booking-preview lazy-section">
             <div class="content">
                 <div class="img-container">
-                    <img src="/assets/images/booking-img.jpg" alt="hotel booking" class="hotelBookingImage" height="30%" width="30%">
+                    <img src="/assets/images/booking-img.jpg" alt="hotel booking" class="hotelBookingImage" height="30%"
+                        width="30%">
                     <div class="txt-1">
                         <h1 class="hotelName">Exclusive Deluxe Hotel & Suite</h1>
                         <p class="hotelLocation">Mo Sandie Crescent, Garki - Abuja</p>
@@ -117,7 +118,7 @@
 <script>
     //paynow button 
     const payNow = document.querySelector(".pay-now")
-    payNow.addEventListener("click", ()=> {
+    payNow.addEventListener("click", () => {
         localStorage.clear();
         window.location.href = "/index.html"
     })
@@ -125,18 +126,18 @@
     // getting items from localStorage
     const cardIndex = localStorage.getItem("cardIndex")
     const hotelLocation = document.querySelector(".hotelLocation")
-    const hotelBookingImage =  document.querySelector(".hotelBookingImage")
+    const hotelBookingImage = document.querySelector(".hotelBookingImage")
     const hotelNames = document.querySelectorAll(".hotelName")
     document.querySelector("#dateSearch").value = localStorage.getItem("dateSearch")
     fetch("/assets/json/hotels.json").then((res) => {
-    res.json().then((data) => {
-        hotelLocation.innerHTML = data[cardIndex].location;
-        hotelBookingImage.src = data[cardIndex].image;
-        hotelNames.forEach((e)=> {
-        e.innerHTML = data[cardIndex].heading;
-        })
+        res.json().then((data) => {
+            hotelLocation.innerHTML = data[cardIndex].location;
+            hotelBookingImage.src = data[cardIndex].image;
+            hotelNames.forEach((e) => {
+                e.innerHTML = data[cardIndex].heading;
+            })
+        });
     });
-  });
 
 
     // Date range picker jquery library
@@ -144,17 +145,17 @@
     var endDate = null;
 
     $(function () {
-      $('input[name="daterange"]').daterangepicker(
-        {
-          opens: "left",
-          // format: "DD-MM-YYYY"
-        },
-        function (start, end, label) {
-          // Store the selected dates
-          startDate = start.format("YYYY-MM-DD");
-          endDate = end.format("YYYY-MM-DD");
-        }
-      )
+        $('input[name="daterange"]').daterangepicker(
+            {
+                opens: "left",
+                // format: "DD-MM-YYYY"
+            },
+            function (start, end, label) {
+                // Store the selected dates
+                startDate = start.format("YYYY-MM-DD");
+                endDate = end.format("YYYY-MM-DD");
+            }
+        )
     });
 
 

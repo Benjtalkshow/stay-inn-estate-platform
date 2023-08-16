@@ -76,7 +76,7 @@
     <div class="bg-img lazy-section">
       <div class="bg-img-container">
         <input type="hidden" value="" class="index">
-        <img src="" alt="" class="bg" />
+        <img src="/assets/images/PopularLocation_5.jpg" alt="" class="bg" />
       </div>
       <div class="detail-container">
         <h1 class="heading"></h1>
@@ -203,16 +203,16 @@
   document.querySelector(".chechOut").innerHTML = getEndDate
   //End setting items to the viewhotels header
 
-// Add addEventListener to booking button
-const bookingBtn = document.querySelector(".booking-Btn")
-bookingBtn.addEventListener("click", (e)=> {
-  e.preventDefault();
-  localStorage.setItem("cardIndex", cardIndex)
-window.location.href = "/booking/booking.html"
-})
-// End of Add addEventListener to booking button
+  // Add addEventListener to booking button
+  const bookingBtn = document.querySelector(".booking-Btn")
+  bookingBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    localStorage.setItem("cardIndex", cardIndex)
+    window.location.href = "/booking/booking.html"
+  })
+  // End of Add addEventListener to booking button
 
-//Fetching from hotels.json
+  //Fetching from hotels.json
   fetch("/assets/json/hotels.json").then((res) => {
     res.json().then((data) => {
       const firstImage = (document.querySelector(".image1").src =
