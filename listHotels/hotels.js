@@ -12,13 +12,13 @@ fetchHotels();
 
 //function to loop through JSON data
 function loopHotelData(hotelCard) {
-  hotelCard.forEach((Cards,index) => {
-    createCard(Cards,index);
+  hotelCard.forEach((Cards, index) => {
+    createCard(Cards, index);
   });
 }
 
 //function to create each card
-function createCard(eachCard,index) {
+function createCard(eachCard, index) {
   const cardContainer = document.querySelector(".hotels");
 
   const html = `<div class="card">
@@ -50,12 +50,12 @@ function createCard(eachCard,index) {
       urlParams.set("heading", el.parentElement.nextElementSibling.nextElementSibling.innerHTML);
       urlParams.set("location", el.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.children[0].innerHTML);
       urlParams.set("price", el.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.innerHTML);
-      urlParams.set("index",el.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.children[1].value );
+      urlParams.set("index", el.parentElement.nextElementSibling.nextElementSibling.nextElementSibling.children[1].value);
       const url = "/viewHotels/view_hotels.html?" + urlParams.toString();
       window.location.href = url;
     };
   });
-  
+
 }
 
 //Implementing search input
@@ -99,27 +99,27 @@ function getFromLocalStorage() {
   const persons = localStorage.getItem("persons")
   const startDate = localStorage.getItem("startDate")
   const endDate = localStorage.getItem("endDate");
-  
+
   const addr = document.querySelector(".address").value = searchDetail;
   const people = document.querySelector(".people").innerHTML = persons;
   const checkIn = document.querySelector(".checkIn").innerHTML = startDate;
   const checkOut = document.querySelector(".checkOut").innerHTML = endDate;
-  
-  
+
+
   const topDate = new Date(localStorage.getItem("startDate"));
   const downDate = new Date(localStorage.getItem("endDate"));
-  
+
   function datediff(first, second) {
     return Math.round((second - first) / (1000 * 60 * 60 * 24));
   }
-  
+
   const diffDays = datediff(topDate, downDate);
   const numberOfNihghts = document.querySelector(".No-of-nights").innerHTML = `${diffDays} NIGHTS`;
   localStorage.setItem("diffDays", diffDays)
-  window.onbeforeunload = function() {
-localStorage.removeItem("location")
+  window.onbeforeunload = function () {
+    localStorage.removeItem("location")
   }
-  
+
 }
 getFromLocalStorage();
 

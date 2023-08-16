@@ -54,10 +54,10 @@ const searchBtn = document.querySelector(".searchbar");
 const bgImage = document.querySelector('.big-img')
 const gridImages = document.querySelectorAll('.grid-img')
 gridImages.forEach((images) => {
-images.addEventListener('click',() => {
-imageUrl = images.getAttribute('src')
-bgImage.setAttribute('src', imageUrl)
-})
+  images.addEventListener('click', () => {
+    imageUrl = images.getAttribute('src')
+    bgImage.setAttribute('src', imageUrl)
+  })
 })
 
 
