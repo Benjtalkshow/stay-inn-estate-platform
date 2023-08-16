@@ -264,7 +264,7 @@ body {
 }
 
 .hero-sub-section .down .searchbar {
-  background-color: var(--almostYellow);
+  background-color: #ffd105;
   color: var(--white);
   font-weight: bold;
 }

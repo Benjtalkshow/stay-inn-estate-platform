@@ -93,3 +93,28 @@ function search() {
 search();
 
 
+// Getting search details from home page to listHotels page
+function getFromLocalStorage() {
+  const searchDetail = localStorage.getItem("location")
+  const persons = localStorage.getItem("persons")
+  const startDate = localStorage.getItem("startDate")
+  const endDate = localStorage.getItem("endDate");
+  
+  const addr = document.querySelector(".address").value = searchDetail;
+  const people = document.querySelector(".people").innerHTML = persons;
+  const checkIn = document.querySelector(".checkIn").innerHTML = startDate;
+  const checkOut = document.querySelector(".checkOut").innerHTML = endDate;
+  
+  
+  const topDate = new Date(localStorage.getItem("startDate"));
+  const downDate = new Date(localStorage.getItem("endDate"));
+  
+  function datediff(first, second) {
+    return Math.round((second - first) / (1000 * 60 * 60 * 24));
+  }
+  
+  const diffDays = datediff(topDate, downDate);
+  const numberOfNihghts = document.querySelector(".No-of-nights").innerHTML = `${diffDays} NIGHTS`
+  
+}
+getFromLocalStorage();
