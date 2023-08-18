@@ -191,6 +191,7 @@
   document.querySelector(".location").innerHTML += rating;
   const cardIndex = document.querySelector(".index").value = index;
 
+
   // setting items to the viewhotels header
   const add = document.querySelector(".address").value = heading;
   const getStartDate = localStorage.getItem("startDate")
@@ -202,6 +203,7 @@
   document.querySelector(".guests").innerHTML = persons;
   document.querySelector(".chechOut").innerHTML = getEndDate
   //End setting items to the viewhotels header
+ 
 
   // Add addEventListener to booking button
   const bookingBtn = document.querySelector(".booking-Btn")
@@ -276,6 +278,14 @@
   };
   displayHamburger.addEventListener('change', checkDisplayHamburger);
   checkDisplayHamburger(displayHamburger);
+
+
+// Check if required parameters are missing or conditions are not met
+if (!image || !heading || !rating || !index || !localStorage.getItem("diffDays") || localStorage.getItem("diffDays") <= 0) {
+  window.location.href = "/index.html"; // Redirect to index.html
+} else {
+}
+
 </script>
 
 </html>
