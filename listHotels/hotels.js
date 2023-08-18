@@ -123,3 +123,8 @@ function getFromLocalStorage() {
 }
 getFromLocalStorage();
 
+//Redirect back to index.html page if differences b/w dates is less than or equal to 0
+const numOfNight = localStorage.getItem("diffDays")
+window.onload = function () {
+  (numOfNight < 0 || numOfNight == 0 ) ? window.location.href = "/index.html" : console.log("fully loaded");
+};

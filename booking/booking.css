@@ -62,7 +62,9 @@ body {
   gap: 100px;
   padding: 0 80px;
 }
-
+.booking form {
+  width: 100%;
+}
 .booking form .input-container {
   align-items: center;
   border: 1px solid var(--almostDarkBlue);
@@ -102,7 +104,7 @@ form .terms_privacy a {
 }
 
 .booking .booking-preview {
-  /* width: 50%; */
+  /* width: 80%; */
   color: var(--white);
 }
 
